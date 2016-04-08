@@ -1,6 +1,0 @@
-org\openmrs\module\hgu\HumanGeneticsModule.class
-org\openmrs\module\hgu\api\db\HumanGeneticsModuleDAO.class
-org\openmrs\module\hgu\api\db\hibernate\HibernateHumanGeneticsModuleDAO.class
-org\openmrs\module\hgu\api\impl\HumanGeneticsModuleServiceImpl.class
-org\openmrs\module\hgu\HumanGeneticsModuleActivator.class
-org\openmrs\module\hgu\api\HumanGeneticsModuleService.class
