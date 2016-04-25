@@ -57,10 +57,10 @@
                 },
                 {
                     "id": "familyInfo",
-                    "label": "Familiy Detail",
+                    "label": "Familiy* Detail",
                     "questions": [
                     {
-					    "legend": "Mother's Name",
+					    "legend": "Mother1's Name",
 					    "id": "myPersonAttributeLabel",
 					    "fields": [
 					      {
@@ -72,12 +72,90 @@
 					                  "providerName": "uicommons",
 					                  "fragmentId": "field/text"
 					                 }
+					       },
+					        {
+					       "type": "personAttribute",
+					       "label": "Mother's Birth day",
+					       "formFieldName": "mothers Birthdate",
+					       "uuid": "65c796ad-3f52-49e6-8ca7-c0e4d2e01831",
+					       "widget": {
+					                  "providerName": "uicommons",
+					                  "fragmentId": "field/text"
+					                 }
+					       }
+						      ]
+						},
+						
+						{
+					    "legend": "Father's Name",
+					    "id": "myPersonAttributeLabel",
+					    "fields": [
+					      {
+					       "type": "personAttribute",
+					       "label": "Father's Name",
+					       "formFieldName": "fathersName",
+					       "uuid": "51c5e4f4-7e13-11e5-8bcf-feff819cdc9f",
+					       "widget": {
+					                  "providerName": "uicommons",
+					                  "fragmentId": "field/text"
+					                 }
+					       },
+					       {
+					       "type": "personAttribute",
+					       "label": "Father's Birth day",
+					       "formFieldName": "fathers Birthdate",
+					       "uuid": "c6251fec-1538-4a0c-a93d-0f01ebb7710a",
+					       "widget": {
+					                  "providerName": "uicommons",
+					                  "fragmentId": "field/text"
+					                 }
 					       }
 						      ]
 						}
+						
+						
    
                     ]
-                }                 
+                },
+                {
+                    "id": "clinicianInfo",
+                    "label": "Clinician Details",
+                    "questions": [
+                    {
+					    "legend": "Referred By",
+					    "id": "myPersonAttributeLabel",
+					    "fields": [
+					      {
+					       "type": "personAttribute",
+					       "label": "Clinicain's Name",
+					       "formFieldName": "clinicianName",
+					       "uuid": "b942c89c-711b-448e-b641-473922df6b55",
+					       "widget": {
+					                  "providerName": "uicommons",
+					                  "fragmentId": "field/text"
+					                 }
+					       }
+						      ]
+						},
+						{
+					    "legend": "Reason",
+					    "id": "myPersonAttributeLabel",
+					    "fields": [
+					      {
+					       "type": "personAttribute",
+					       "label": "reason",
+					       "formFieldName": "reason",
+					       "uuid": "1b1742db-dae5-4c6e-a479-9fe21c325b23",
+					       "widget": {
+					                  "providerName": "uicommons",
+					                  "fragmentId": "field/text"
+					                 }
+					       }
+						      ]
+						}
+						
+                    ]
+                }             
                 
             ]
         }
