@@ -57,10 +57,10 @@
                 },
                 {
                     "id": "familyInfo",
-                    "label": "Familiy* Detail",
+                    "label": "Familiy Detail",
                     "questions": [
                     {
-					    "legend": "Mother1's Name",
+					    "legend": "Mother",
 					    "id": "myPersonAttributeLabel",
 					    "fields": [
 					      {
@@ -87,7 +87,7 @@
 						},
 						
 						{
-					    "legend": "Father's Name",
+					    "legend": "Father",
 					    "id": "myPersonAttributeLabel",
 					    "fields": [
 					      {
@@ -111,6 +111,32 @@
 					                 }
 					       }
 						      ]
+						},
+                        {
+					    "legend": "Child",
+					    "id": "myPersonAttributeLabel",
+					    "fields": [
+					      {
+					       "type": "personAttribute",
+					       "label": "Child's Name",
+					       "formFieldName": "childsName",
+					       "uuid": "307fe4ab-9a29-48cd-be23-ec18c41eeead",
+					       "widget": {
+					                  "providerName": "uicommons",
+					                  "fragmentId": "field/text"
+					                 }
+					       },
+					        {
+					       "type": "personAttribute",
+					       "label": "Child's Birthday",
+					       "formFieldName": "childs Birthdate",
+					       "uuid": "e95d5c1b-21ea-4c09-b8c7-9a9f68684254",
+					       "widget": {
+					                  "providerName": "uicommons",
+					                  "fragmentId": "field/text"
+					                 }
+					       }
+						      ]
 						}
 						
 						
@@ -119,7 +145,7 @@
                 },
                 {
                     "id": "clinicianInfo",
-                    "label": "Clinician Details",
+                    "label": "Clinician's Details",
                     "questions": [
                     {
 					    "legend": "Referred By",
