@@ -80,7 +80,7 @@
 					       "uuid": "65c796ad-3f52-49e6-8ca7-c0e4d2e01831",
 					       "widget": {
 					                  "providerName": "uicommons",
-					                  "fragmentId": "field/text"
+					                  "fragmentId": "field/multipleInputDate"
 					                 }
 					       }
 						      ]
@@ -107,7 +107,7 @@
 					       "uuid": "c6251fec-1538-4a0c-a93d-0f01ebb7710a",
 					       "widget": {
 					                  "providerName": "uicommons",
-					                  "fragmentId": "field/text"
+					                  "fragmentId": "field/multipleInputDate"
 					                 }
 					       }
 						      ]
@@ -118,7 +118,7 @@
 					    "fields": [
 					      {
 					       "type": "personAttribute",
-					       "label": "Child's Name",
+					       "label": "Child 1 - Name",
 					       "formFieldName": "childsName",
 					       "uuid": "307fe4ab-9a29-48cd-be23-ec18c41eeead",
 					       "widget": {
@@ -133,7 +133,7 @@
 					       "uuid": "e95d5c1b-21ea-4c09-b8c7-9a9f68684254",
 					       "widget": {
 					                  "providerName": "uicommons",
-					                  "fragmentId": "field/text"
+					                  "fragmentId": "field/multipleInputDate"
 					                 }
 					       }
 						      ]
@@ -174,7 +174,7 @@
 					       "uuid": "1b1742db-dae5-4c6e-a479-9fe21c325b23",
 					       "widget": {
 					                  "providerName": "uicommons",
-					                  "fragmentId": "field/text"
+					                  "fragmentId": "field/textarea"
 					                 }
 					       }
 						      ]
