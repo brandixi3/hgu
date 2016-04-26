@@ -52,6 +52,21 @@ public class PersonAttributeInitializer implements Initializer {
 			Context.getPersonService().savePersonAttributeType(type);
 		}
 		
+		
+		{
+			String uuid = HGUFormsConstants.HGU_FATHERS_NAME_UUID;
+			PersonAttributeType type = Context.getPersonService().getPersonAttributeTypeByUuid(uuid);
+			if(type == null) {
+				type = new PersonAttributeType();
+				type.setUuid(uuid);
+			}
+			type.setName("Father's Name");
+			type.setDescription("Father's Name");
+			type.setFormat("java.lang.String");
+			Context.getPersonService().savePersonAttributeType(type);
+		}
+		
+		
 		{
 			String uuid = HGUFormsConstants.HGU_FATHERS_BDAY_UUID;
 			PersonAttributeType type = Context.getPersonService().getPersonAttributeTypeByUuid(uuid);
@@ -100,7 +115,7 @@ public class PersonAttributeInitializer implements Initializer {
 			}
 			type.setName("Child's B'day");
 			type.setDescription("Child's B'day");
-			type.setFormat("java.lang.String");
+			type.setFormat("org.openmrs.util.AttributableDate");
 			Context.getPersonService().savePersonAttributeType(type);
 		}
 			

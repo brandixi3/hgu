@@ -1,189 +1,220 @@
 [
-    {
-        "id": "hgu.referenceapplication.registrationapp.registerPatient",
-        "instanceOf": "registrationapp.registerPatient",
-        "label": "Register Patient",
-        "description": "Create a new Patient Record",
-        "extensions": [
-            {
-                "id": "referenceapplication.registrationapp.registerPatient.homepageLink",
-                "extensionPointId": "org.openmrs.referenceapplication.homepageLink",
-                "type": "link",
-                "label": "referenceapplication.app.registerPatient.label",
-                "url": "registrationapp/registerPatient.page?appId=hgu.referenceapplication.registrationapp.registerPatient",
-                "icon": "icon-user",
-                "order": 1,
-                "requiredPrivilege": "App: registrationapp.registerPatient"
-            }
-        ],
-        "config": {
-            "afterCreatedUrl": "/coreapps/clinicianfacing/patient.page?patientId={{patientId}}",
-            "sections": [
-                {
-                    "id": "contactInfo",
-                    "label": "registrationapp.patient.contactInfo.label",
-                    "questions": [
-                        {
-                            "legend": "Person.address",
-                            "fields": [
-                                {
-                                    "type": "personAddress",
-                                    "label": "registrationapp.patient.address.question",
-                                    "widget": {
-                                        "providerName": "uicommons",
-                                        "fragmentId": "field/personAddress"
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            "legend": "registrationapp.patient.phone.label",
-                            "id": "phoneNumberLabel",
-                            "fields": [
-                                {
-                                    "type": "personAttribute",
-                                    "label": "registrationapp.patient.phone.question",
-                                    "formFieldName": "phoneNumber",
-                                    "uuid": "14d4f066-15f5-102d-96e4-000c29c2a5d7",
-                                    "widget": {
-                                        "providerName": "uicommons",
-                                        "fragmentId": "field/text"
-                                    },
-                                    "cssClasses": ["phone"]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "familyInfo",
-                    "label": "Familiy Detail",
-                    "questions": [
-                    {
-					    "legend": "Mother",
-					    "id": "myPersonAttributeLabel",
-					    "fields": [
-					      {
-					       "type": "personAttribute",
-					       "label": "Mother's Name",
-					       "formFieldName": "mothersName",
-					       "uuid": "8d871d18-c2cc-11de-8d13-0010c6dffd0f",
-					       "widget": {
-					                  "providerName": "uicommons",
-					                  "fragmentId": "field/text"
-					                 }
-					       },
-					        {
-					       "type": "personAttribute",
-					       "label": "Mother's Birth day",
-					       "formFieldName": "mothers Birthdate",
-					       "uuid": "65c796ad-3f52-49e6-8ca7-c0e4d2e01831",
-					       "widget": {
-					                  "providerName": "uicommons",
-					                  "fragmentId": "field/multipleInputDate"
-					                 }
-					       }
-						      ]
-						},
-						
+	{
+		"id": "hgu.referenceapplication.registrationapp.registerPatient",
+		"instanceOf": "registrationapp.registerPatient",
+		"label": "Register Patient",
+		"description": "Create a new Patient Record",
+		"extensions": 
+		[
+			{
+				"id": "referenceapplication.registrationapp.registerPatient.homepageLink",
+				"extensionPointId": "org.openmrs.referenceapplication.homepageLink",
+				"type": "link",
+				"label": "hgu.app.registerPatient.label",
+				"url": "registrationapp/registerPatient.page?appId=hgu.referenceapplication.registrationapp.registerPatient",
+				"icon": "icon-user",
+				"order": 1,
+				"requiredPrivilege": "App: registrationapp.registerPatient"
+			}
+		],
+
+		"config": 
+		{
+			"afterCreatedUrl": "/coreapps/clinicianfacing/patient.page?patientId={{patientId}}",
+			"sections": 
+			[
+				{
+					"id": "contactInfo",
+					"label": "registrationapp.patient.contactInfo.label",
+					"questions": 
+					[
 						{
-					    "legend": "Father",
-					    "id": "myPersonAttributeLabel",
-					    "fields": [
-					      {
-					       "type": "personAttribute",
-					       "label": "Father's Name",
-					       "formFieldName": "fathersName",
-					       "uuid": "51c5e4f4-7e13-11e5-8bcf-feff819cdc9f",
-					       "widget": {
-					                  "providerName": "uicommons",
-					                  "fragmentId": "field/text"
-					                 }
-					       },
-					       {
-					       "type": "personAttribute",
-					       "label": "Father's Birth day",
-					       "formFieldName": "fathers Birthdate",
-					       "uuid": "c6251fec-1538-4a0c-a93d-0f01ebb7710a",
-					       "widget": {
-					                  "providerName": "uicommons",
-					                  "fragmentId": "field/multipleInputDate"
-					                 }
-					       }
-						      ]
+							"legend": "Person.address",
+							"fields": 
+							[
+								{
+									"type": "personAddress",
+									"label": "registrationapp.patient.address.question",
+									"widget": 
+									{
+										"providerName": "uicommons",
+										"fragmentId": "field/personAddress"
+									}
+								}
+							]
 						},
-                        {
-					    "legend": "Child",
-					    "id": "myPersonAttributeLabel",
-					    "fields": [
-					      {
-					       "type": "personAttribute",
-					       "label": "Child 1 - Name",
-					       "formFieldName": "childsName",
-					       "uuid": "307fe4ab-9a29-48cd-be23-ec18c41eeead",
-					       "widget": {
-					                  "providerName": "uicommons",
-					                  "fragmentId": "field/text"
-					                 }
-					       },
-					        {
-					       "type": "personAttribute",
-					       "label": "Child's Birthday",
-					       "formFieldName": "childs Birthdate",
-					       "uuid": "e95d5c1b-21ea-4c09-b8c7-9a9f68684254",
-					       "widget": {
-					                  "providerName": "uicommons",
-					                  "fragmentId": "field/multipleInputDate"
-					                 }
-					       }
-						      ]
-						}
-						
-						
-   
-                    ]
-                },
-                {
-                    "id": "clinicianInfo",
-                    "label": "Clinician's Details",
-                    "questions": [
-                    {
-					    "legend": "Referred By",
-					    "id": "myPersonAttributeLabel",
-					    "fields": [
-					      {
-					       "type": "personAttribute",
-					       "label": "Clinicain's Name",
-					       "formFieldName": "clinicianName",
-					       "uuid": "b942c89c-711b-448e-b641-473922df6b55",
-					       "widget": {
-					                  "providerName": "uicommons",
-					                  "fragmentId": "field/text"
-					                 }
-					       }
-						      ]
-						},
+
 						{
-					    "legend": "Reason",
-					    "id": "myPersonAttributeLabel",
-					    "fields": [
-					      {
-					       "type": "personAttribute",
-					       "label": "reason",
-					       "formFieldName": "reason",
-					       "uuid": "1b1742db-dae5-4c6e-a479-9fe21c325b23",
-					       "widget": {
-					                  "providerName": "uicommons",
-					                  "fragmentId": "field/textarea"
-					                 }
-					       }
-						      ]
+							"legend": "registrationapp.patient.phone.label",
+							"id": "phoneNumberLabel",
+							"fields": 
+							[
+								{
+									"type": "personAttribute",
+									"label": "registrationapp.patient.phone.question",
+									"formFieldName": "phoneNumber",
+									"uuid": "14d4f066-15f5-102d-96e4-000c29c2a5d7",
+									"widget": 
+									{
+										"providerName": "uicommons",
+										"fragmentId": "field/text"
+									},
+
+									"cssClasses": 
+									[
+										"phone"
+									]
+								}
+							]
 						}
-						
-                    ]
-                }             
-                
-            ]
-        }
-    }
+					]
+				},
+
+				{
+					"id": "familyInfo",
+					"label": "Familiy Details",
+					"questions": 
+					[
+						{
+							"legend": "Mother",
+							"id": "MotherDetails",
+							"fields": 
+							[
+								{
+									"type": "personAttribute",
+									"label": "Mother's Name",
+									"formFieldName": "mothersName",
+									"uuid": "8d871d18-c2cc-11de-8d13-0010c6dffd0f",
+									"widget": 
+									{
+										"providerName": "uicommons",
+										"fragmentId": "field/text"
+									}
+								},
+
+								{
+									"type": "personAttribute",
+									"label": "Mother's Birthday",
+									"formFieldName": "mothersBirthDate",
+									"uuid": "65c796ad-3f52-49e6-8ca7-c0e4d2e01831",
+									"widget": 
+									{
+										"providerName": "uicommons",
+										"fragmentId": "field/multipleInputDate"
+									}
+								}
+							]
+						},
+
+						{
+							"legend": "Father",
+							"id": "FatherDetails",
+							"fields": 
+							[
+								{
+									"type": "personAttribute",
+									"label": "Father's Name",
+									"formFieldName": "fathersName",
+									"uuid": "51c5e4f4-7e13-11e5-8bcf-feff819cdc9f",
+									"widget": 
+									{
+										"providerName": "uicommons",
+										"fragmentId": "field/text"
+									}
+								},
+
+								{
+									"type": "personAttribute",
+									"label": "Father's Birthday",
+									"formFieldName": "fathersBirthDate",
+									"uuid": "c6251fec-1538-4a0c-a93d-0f01ebb7710a",
+									"widget": 
+									{
+										"providerName": "uicommons",
+										"fragmentId": "field/multipleInputDate"
+									}
+								}
+							]
+						},
+
+						{
+							"legend": "Child",
+							"id": "ChildDetails",
+							"fields": 
+							[
+								{
+									"type": "personAttribute",
+									"label": "Child's Name",
+									"formFieldName": "childsName",
+									"uuid": "307fe4ab-9a29-48cd-be23-ec18c41eeead",
+									"widget": 
+									{
+										"providerName": "uicommons",
+										"fragmentId": "field/text"
+									}
+								},
+
+								{
+									"type": "personAttribute",
+									"label": "Child's Birthday",
+									"formFieldName": "childsBirthDate",
+									"uuid": "e95d5c1b-21ea-4c09-b8c7-9a9f68684254",
+									"widget": 
+									{
+										"providerName": "uicommons",
+										"fragmentId": "field/multipleInputDate"
+									}
+								}
+							]
+						}
+					]
+				},
+
+				{
+					"id": "clinicianInfo",
+					"label": "Clinician's Details",
+					"questions": 
+					[
+						{
+							"legend": "Referred By",
+							"id": "RefferedBy",
+							"fields": 
+							[
+								{
+									"type": "personAttribute",
+									"label": "Clinicain's Name",
+									"formFieldName": "clinicianName",
+									"uuid": "b942c89c-711b-448e-b641-473922df6b55",
+									"widget": 
+									{
+										"providerName": "uicommons",
+										"fragmentId": "field/text"
+									}
+								}
+							]
+						},
+
+						{
+							"legend": "Reason",
+							"id": "Reason",
+							"fields": 
+							[
+								{
+									"type": "personAttribute",
+									"label": "reason",
+									"formFieldName": "reason",
+									"uuid": "1b1742db-dae5-4c6e-a479-9fe21c325b23",
+									"widget": 
+									{
+										"providerName": "uicommons",
+										"fragmentId": "field/textarea"
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	}
 ]
