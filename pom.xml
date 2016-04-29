@@ -36,6 +36,7 @@
 	<properties>
 		<openMRSVersion>1.11.3</openMRSVersion>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<appframeworkVersion>2.4</appframeworkVersion>
 	</properties>
 
 	<dependencyManagement>
@@ -96,6 +97,12 @@
 				<artifactId>uiframework-api</artifactId>
 				<version>3.2.2</version>
 				<type>jar</type>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.openmrs.module</groupId>
+				<artifactId>appframework-api</artifactId>
+				<version>${appframeworkVersion}</version>
 				<scope>provided</scope>
 			</dependency>
 
