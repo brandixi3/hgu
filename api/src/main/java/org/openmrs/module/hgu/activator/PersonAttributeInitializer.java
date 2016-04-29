@@ -27,14 +27,14 @@ public class PersonAttributeInitializer implements Initializer {
 		log.info("Setting 'person attribute' configuration for " + HumanGeneticsModuleActivator.ACTIVATOR_MODULE_NAME);
 		
 		{
-			String uuid = HGUFormsConstants.HGU_CHILDS_NAME_UUID;
+			String uuid = HGUFormsConstants.HGU_CHILD_ONE_NAME_UUID;
 			PersonAttributeType type = Context.getPersonService().getPersonAttributeTypeByUuid(uuid);
 			if(type == null) {
 				type = new PersonAttributeType();
 				type.setUuid(uuid);
 			}
-			type.setName("Child's Name");
-			type.setDescription("Chaild's Name");
+			type.setName("ChildOne's Name");
+			type.setDescription("ChaildOne's Name");
 			type.setFormat("java.lang.String");
 			Context.getPersonService().savePersonAttributeType(type);
 		}
@@ -107,25 +107,109 @@ public class PersonAttributeInitializer implements Initializer {
 		}
 		
 		{
-			String uuid = HGUFormsConstants.HGU_CHILD_BIRTHDAY_UUID;
+			String uuid = HGUFormsConstants.HGU_CHILD_ONE_BIRTHDAY_UUID;
 			PersonAttributeType type = Context.getPersonService().getPersonAttributeTypeByUuid(uuid);
 			if(type == null) {
 				type = new PersonAttributeType();
 				type.setUuid(uuid);
 			}
-			type.setName("Child's B'day");
-			type.setDescription("Child's B'day");
+			type.setName("Child One's B'day");
+			type.setDescription("Child One's B'day");
+			type.setFormat("org.openmrs.util.AttributableDate");
+			Context.getPersonService().savePersonAttributeType(type);
+		}
+		
+		//Addedon 27thApril 8.30PM
+		{
+			String uuid = HGUFormsConstants.HGU_CHILD_ONE_GENDER_UUID;
+			PersonAttributeType type = Context.getPersonService().getPersonAttributeTypeByUuid(uuid);
+			if(type == null) {
+				type = new PersonAttributeType();
+				type.setUuid(uuid);
+			}
+			type.setName("ChildOne's Gender");
+			type.setDescription("ChaildOne's Gender");
+			type.setFormat("java.lang.String");
+			Context.getPersonService().savePersonAttributeType(type);
+		}
+		
+		
+		{
+			String uuid = HGUFormsConstants.HGU_CHILD_TWO_NAME_UUID;
+			PersonAttributeType type = Context.getPersonService().getPersonAttributeTypeByUuid(uuid);
+			if(type == null) {
+				type = new PersonAttributeType();
+				type.setUuid(uuid);
+			}
+			type.setName("Child Two's Name");
+			type.setDescription("ChaildTwo's Name");
+			type.setFormat("java.lang.String");
+			Context.getPersonService().savePersonAttributeType(type);
+		}
+		{
+			String uuid = HGUFormsConstants.HGU_CHILD_TWO_BIRTHDAY_UUID;
+			PersonAttributeType type = Context.getPersonService().getPersonAttributeTypeByUuid(uuid);
+			if(type == null) {
+				type = new PersonAttributeType();
+				type.setUuid(uuid);
+			}
+			type.setName("Child Two's B'day");
+			type.setDescription("Child Two's B'day");
+			type.setFormat("org.openmrs.util.AttributableDate");
+			Context.getPersonService().savePersonAttributeType(type);
+		}
+		{
+			String uuid = HGUFormsConstants.HGU_CHILD_TWO_GENDER_UUID;
+			PersonAttributeType type = Context.getPersonService().getPersonAttributeTypeByUuid(uuid);
+			if(type == null) {
+				type = new PersonAttributeType();
+				type.setUuid(uuid);
+			}
+			type.setName("ChildTwo's Gender");
+			type.setDescription("ChaildTwo's Gender");
+			type.setFormat("java.lang.String");
+			Context.getPersonService().savePersonAttributeType(type);
+		}
+		
+		
+		{
+			String uuid = HGUFormsConstants.HGU_CHILD_THREE_NAME_UUID;
+			PersonAttributeType type = Context.getPersonService().getPersonAttributeTypeByUuid(uuid);
+			if(type == null) {
+				type = new PersonAttributeType();
+				type.setUuid(uuid);
+			}
+			type.setName("Child Three's Name");
+			type.setDescription("ChaildThree's Name");
+			type.setFormat("java.lang.String");
+			Context.getPersonService().savePersonAttributeType(type);
+		}
+		{
+			String uuid = HGUFormsConstants.HGU_CHILD_THREE_BIRTHDAY_UUID;
+			PersonAttributeType type = Context.getPersonService().getPersonAttributeTypeByUuid(uuid);
+			if(type == null) {
+				type = new PersonAttributeType();
+				type.setUuid(uuid);
+			}
+			type.setName("Child Three's B'day");
+			type.setDescription("Child Three's B'day");
 			type.setFormat("org.openmrs.util.AttributableDate");
 			Context.getPersonService().savePersonAttributeType(type);
 		}
 		
 		
-		
-		
-		
-		
-		
-		
+		{
+			String uuid = HGUFormsConstants.HGU_CHILD_THREE_GENDER_UUID;
+			PersonAttributeType type = Context.getPersonService().getPersonAttributeTypeByUuid(uuid);
+			if(type == null) {
+				type = new PersonAttributeType();
+				type.setUuid(uuid);
+			}
+			type.setName("ChildThree's Gender");
+			type.setDescription("ChaildThree's Gender");
+			type.setFormat("java.lang.String");
+			Context.getPersonService().savePersonAttributeType(type);
+		}
 			
 	}
 

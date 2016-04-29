@@ -138,14 +138,14 @@
 						},
 
 						{
-							"legend": "Child",
-							"id": "ChildDetails",
+							"legend": "Child - 1",
+							"id": "ChildOneDetails",
 							"fields": 
 							[
 								{
 									"type": "personAttribute",
 									"label": "Child's Name",
-									"formFieldName": "childsName",
+									"formFieldName": "childOnesName",
 									"uuid": "307fe4ab-9a29-48cd-be23-ec18c41eeead",
 									"widget": 
 									{
@@ -157,13 +157,106 @@
 								{
 									"type": "personAttribute",
 									"label": "Child's Birthday",
-									"formFieldName": "childsBirthDate",
+									"formFieldName": "childOnesBirthDate",
 									"uuid": "e95d5c1b-21ea-4c09-b8c7-9a9f68684254",
 									"widget": 
 									{
 										"providerName": "uicommons",
 										"fragmentId": "field/multipleInputDate"
 									}
+								},
+                                {
+									"type": "personAttribute",
+									"label": "Gender",
+									"formFieldName": "childOnesGender",
+									"uuid": "5b98836a-3785-464f-9c28-c4f03ccaee00",
+									"widget": 
+									{
+                                        "providerName": "hgu",
+                                        "fragmentId": "field/dropDown"
+                                    }
+								}
+							]
+						},
+                        {
+							"legend": "Child - 2",
+							"id": "ChildTwosDetails",
+							"fields": 
+							[
+								{
+									"type": "personAttribute",
+									"label": "Child's Name",
+									"formFieldName": "childTwosName",
+									"uuid": "4f1e45b1-7fed-47eb-86bf-97bcba3bd482",
+									"widget": 
+									{
+										"providerName": "uicommons",
+										"fragmentId": "field/text"
+									}
+								},
+
+								{
+									"type": "personAttribute",
+									"label": "Child's Birthday",
+									"formFieldName": "childTwosBirthDate",
+									"uuid": "228e3839-1904-4a36-ab31-78a9055de92f",
+									"widget": 
+									{
+										"providerName": "uicommons",
+										"fragmentId": "field/multipleInputDate"
+									}
+								},
+                                {
+									"type": "personAttribute",
+									"label": "Gender",
+									"formFieldName": "childTwosGender",
+									"uuid": "cf4ee1d1-dbc8-4ecd-893b-876e5b52b458",
+									"widget": 
+									{
+                                        "providerName": "hgu",
+                                        "fragmentId": "field/dropDown"
+                                    }
+								}
+							]
+						},
+                        {
+							"legend": "Child - 3",
+							"id": "ChildThreesDetails",
+							"fields": 
+							[
+								{
+									"type": "personAttribute",
+									"label": "Child's Name",
+									"formFieldName": "childThreesName",
+									"uuid": "44032747-90ed-4d90-9aa2-9677ae0090d5",
+									"widget": 
+									{
+										"providerName": "uicommons",
+										"fragmentId": "field/text"
+									}
+								},
+
+								{
+									"type": "personAttribute",
+									"label": "Child's Birthday",
+									"formFieldName": "childThreesBirthDate",
+									"uuid": "62cb1340-2636-4926-a66e-33961a76a825",
+									"widget": 
+									{
+										"providerName": "uicommons",
+										"fragmentId": "field/multipleInputDate"
+									}
+								},
+                                {
+									"type": "personAttribute",
+									"label": "Gender",
+									"formFieldName": "childThreesGender",
+									"uuid": "12902bb1-d662-4df1-b037-efc5074b083d",
+									"widget": 
+									{
+                                        "providerName": "hgu",
+                                        "fragmentId": "field/dropDown"
+                                    }
 								}
 							]
 						}
