@@ -118,6 +118,14 @@ public class PersonAttributeInitializer implements Initializer {
 			type.setFormat("org.openmrs.util.AttributableDate");
 			Context.getPersonService().savePersonAttributeType(type);
 		}
+		
+		
+		
+		
+		
+		
+		
+		
 			
 	}
 
