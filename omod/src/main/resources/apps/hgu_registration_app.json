@@ -52,7 +52,7 @@
 								{
 									"type": "personAttribute",
 									"label": "registrationapp.patient.phone.question",
-									"formFieldName": "phoneNumber",
+									"formFieldName": "phone Number",
 									"uuid": "14d4f066-15f5-102d-96e4-000c29c2a5d7",
 									"widget": 
 									{
@@ -66,13 +66,34 @@
 									]
 								}
 							]
+						},
+                        {
+							"legend": "Email",
+							"id": "phoneNumberLabel",
+							"fields": 
+							[
+								{
+									"type": "personAttribute",
+									"label": "Email address",
+									"formFieldName": "email",
+									"uuid": "00872f90-0baa-4dbd-8099-7b54fd02c7e2",
+									"widget": 
+									{
+										"providerName": "uicommons",
+										"fragmentId": "field/text"
+                                    }
+                                    
+                                   
+									
+								}
+							]
 						}
 					]
 				},
 
 				{
 					"id": "familyInfo",
-					"label": "Familiy Details",
+					"label": "Parents Details",
 					"questions": 
 					[
 						{
@@ -122,7 +143,8 @@
 										"fragmentId": "field/text"
 									}
 								},
-
+                
+                                
 								{
 									"type": "personAttribute",
 									"label": "Father's Birthday",
@@ -135,10 +157,18 @@
 									}
 								}
 							]
-						},
+						}
+                ]
+                },
+                {
+					"id": "childInfo",
+					"label": "Children Details",
+					"questions": 
+					[
+                    
 
 						{
-							"legend": "Child - 1",
+							"legend": "First Child",
 							"id": "ChildOneDetails",
 							"fields": 
 							[
@@ -179,7 +209,7 @@
 							]
 						},
                         {
-							"legend": "Child - 2",
+							"legend": "Second Child ",
 							"id": "ChildTwosDetails",
 							"fields": 
 							[
@@ -220,7 +250,7 @@
 							]
 						},
                         {
-							"legend": "Child - 3",
+							"legend": "Third Child",
 							"id": "ChildThreesDetails",
 							"fields": 
 							[
@@ -259,7 +289,27 @@
                                     }
 								}
 							]
+						},
+                        
+                        {
+							"legend": "Additiional info",
+							"id": "AdditionalDetails",
+							"fields": 
+							[
+								{
+									"type": "personAttribute",
+									"label": "other",
+									"formFieldName": "other",
+									"uuid": "03da94bc-a741-44f9-845c-17c93acad4b9",
+									"widget": 
+									{
+										"providerName": "uicommons",
+										"fragmentId": "field/textarea"
+									}
+								}
+							]
 						}
+                        
 					]
 				},
 
