@@ -196,6 +196,8 @@ public class PersonAttributeInitializer implements Initializer {
 			type.setFormat("org.openmrs.util.AttributableDate");
 			Context.getPersonService().savePersonAttributeType(type);
 		}
+		
+		
 		{
 			String uuid = HGUFormsConstants.HGU_CHILD_THREE_GENDER_UUID;
 			PersonAttributeType type = Context.getPersonService().getPersonAttributeTypeByUuid(uuid);
