@@ -2,15 +2,12 @@
 
 <%
 		ui.decorateWith("appui", "standardEmrPage");
+		ui.includeCss("hgu", "JsPedigrees.css");
 	    ui.includeJavascript("hgu", "jspedigrees.nocache.js");
 	    ui.includeJavascript("hgu", "start-pedigrees.js");
-	    ui.includeCss("hgu", "JsPedigrees.css");
 	%>
 
 <%= ui.resourceLinks() %>
-
-
-
 
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -33,21 +30,42 @@
     <h1>jsPedigrees</h1>
     <center><i>Updated 30-August-2013</i></center>
      <b>Instructions</b><br>
-    <ol>
+     
+	<style>
+ol.a {
+    list-style-type: upper-arab;
+    position: relative;
+  	left: 30px;
+}
+ol.b {
+    list-style-type: upper-roman;
+    position: relative;
+  	left: 40px;
+}
+ul.c {
+    list-style-type: circle;
+    position: relative;
+  	left: 40px;
+}
+</style>
+     
+     
+     
+    <ol class="a">
     	<li>Click members of the pedigree and an Edit menu will pop up that allows you to:</li>
-    		<ul>
+    		<ul class="c">
     			<li>Add members of the pedigree related to the selected person</li>
     			<li>Change the sex or disease status of the selected person</li>
     			<li>Delete the selected person</li>
     		</ul>
     	<li>The <b>Edit</b> menu allows un-doing and re-doing changes.</li>
     	<li>Click "solve" to solve the pedigree (note that this can take a long time if the peidgree is large). </li>
-    		<ol>
+    		<ol class="b">
     			<li>The solution will appear in the box below the "solve" button.</li>
-    			<li>The solution will list the 4 possible modes of inheritance<li>
-    				<ul>
+    			<li>The solution will list the 4 possible modes of inheritance</li>
+    				<ul class="c">
     					<li>If the mode is possible, it will list genotypes for each individual that are
-    						consistent with the pedigree and the mode. Symbols can be found in the tables
+    						consistent with the pedigree and the mode. </br>Symbols can be found in the tables
     						below.</li>
     					<li>If the mode is not possible, it will say "Not possible".</li>
     				</ul>

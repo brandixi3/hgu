@@ -359,5 +359,22 @@
 				}
 			]
 		}
-	}
+	},
+    
+    {
+        "id": "hgu.JsPedigrees",
+        "description": "Draw pedigree",
+        "order": 2,
+        "extensions": [
+            {
+                "id": "coreapps.activeVisitsHomepageLink",
+                "extensionPointId": "patientDashboard.overallActions",
+                "type": "link",
+                "label": "Pedigree Tree",
+                "url": "hgu/JsPedigrees.page",
+                "icon": "icon-sitemap",
+                "requiredPrivilege": "App: coreapps.findPatient"
+            }
+        ]
+    }
 ]
