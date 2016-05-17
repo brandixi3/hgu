@@ -37,6 +37,11 @@
 		<openMRSVersion>1.11.3</openMRSVersion>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<appframeworkVersion>2.4</appframeworkVersion>
+		<formentryappVersion>1.1</formentryappVersion>
+		<htmlformentryuiVersion>1.2</htmlformentryuiVersion>
+		<htmlformentryVersion>2.5</htmlformentryVersion>
+		<uiframeworkVersion>3.3.1</uiframeworkVersion>
+		<htmlformentryuiVersion>1.2</htmlformentryuiVersion>
 	</properties>
 
 	<dependencyManagement>
@@ -94,15 +99,50 @@
 			<!-- End OpenMRS core -->
 			<dependency>
 				<groupId>org.openmrs.module</groupId>
-				<artifactId>uiframework-api</artifactId>
-				<version>3.2.2</version>
-				<type>jar</type>
+				<artifactId>appframework-api</artifactId>
+				<version>${appframeworkVersion}</version>
 				<scope>provided</scope>
 			</dependency>
 			<dependency>
 				<groupId>org.openmrs.module</groupId>
-				<artifactId>appframework-api</artifactId>
-				<version>${appframeworkVersion}</version>
+				<artifactId>formentryapp-omod</artifactId>
+				<version>${formentryappVersion}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.openmrs.module</groupId>
+				<artifactId>htmlformentry-api</artifactId>
+				<version>${htmlformentryVersion}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.openmrs.module</groupId>
+				<artifactId>htmlformentry-api-1.10</artifactId>
+				<version>${htmlformentryVersion}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.openmrs.module</groupId>
+				<artifactId>htmlformentry19ext-api</artifactId>
+				<version>${htmlformentry19extVersion}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.openmrs.module</groupId>
+				<artifactId>htmlformentryui-api</artifactId>
+				<version>${htmlformentryuiVersion}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.openmrs.module</groupId>
+				<artifactId>uiframework-api</artifactId>
+				<version>${uiframeworkVersion}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.openmrs.module</groupId>
+				<artifactId>htmlformentryui-omod</artifactId>
+				<version>${htmlformentryuiVersion}</version>
 				<scope>provided</scope>
 			</dependency>
 
