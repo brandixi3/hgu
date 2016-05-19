@@ -8,6 +8,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.openmrs.module.ModuleActivator;
 import org.openmrs.module.hgu.activator.AdminConfigInitializer;
+import org.openmrs.module.hgu.activator.HGUConceptsInitializer;
 import org.openmrs.module.hgu.activator.HtmlFormsInitializer;
 import org.openmrs.module.hgu.activator.Initializer;
 import org.openmrs.module.hgu.activator.PersonAttributeInitializer;
@@ -23,6 +24,7 @@ public class HumanGeneticsModuleActivator implements ModuleActivator {
 	
 	/** The Constant ACTIVATOR_MODULE_NAME. */
 	public final static String ACTIVATOR_MODULE_NAME = "HGU Module";
+	
 		
 	
 	/**
@@ -35,6 +37,7 @@ public class HumanGeneticsModuleActivator implements ModuleActivator {
 		l.add(new PersonAttributeInitializer());
 		l.add(new AdminConfigInitializer());
 		l.add(new HtmlFormsInitializer());
+		l.add(new HGUConceptsInitializer());
 		return l;
 	}
 	

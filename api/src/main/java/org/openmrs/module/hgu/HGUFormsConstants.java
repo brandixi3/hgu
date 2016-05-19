@@ -21,5 +21,10 @@ public class HGUFormsConstants {
 	public static final String HGU_CHILD_THREE_NAME_UUID ="44032747-90ed-4d90-9aa2-9677ae0090d5";
 	public static final String HGU_CHILD_THREE_BIRTHDAY_UUID ="62cb1340-2636-4926-a66e-33961a76a825";
 	public static final String HGU_CHILD_THREE_GENDER_UUID ="12902bb1-d662-4df1-b037-efc5074b083d";
+	
+	
+	
+	public final static String HGU_CONCEPT_SOURCE = "HGU";
+	public final static String CIEL_CONCEPT_SOURCE = "CEIL";
 		
 }

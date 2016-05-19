@@ -299,7 +299,7 @@
 								{
 									"type": "obs",
 									"label": "other",
-									"formFieldName": "obs.163113",
+									"formFieldName": "obs.HGU:163113",
                                     "uuid": "03da94bc-a741-44f9-845c-17c93acad4b9",
 									"widget": 
 									{
@@ -347,7 +347,7 @@
 								{
 									"type": "obs",
 									"label": "reason",
-									"formFieldName": "obs.HGU.163114",
+									"formFieldName": "obs.HGU:163114",
 									
 									"widget": 
 									{
