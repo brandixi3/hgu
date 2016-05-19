@@ -292,19 +292,20 @@
 						},
                         
                         {
-							"legend": "Additiional info",
+							"legend": "Additional info",
 							"id": "AdditionalDetails",
 							"fields": 
 							[
 								{
-									"type": "personAttribute",
+									"type": "obs",
 									"label": "other",
-									"formFieldName": "other",
-									"uuid": "03da94bc-a741-44f9-845c-17c93acad4b9",
+									"formFieldName": "obs.163113",
+                                    "uuid": "03da94bc-a741-44f9-845c-17c93acad4b9",
 									"widget": 
 									{
 										"providerName": "uicommons",
-										"fragmentId": "field/textarea"
+										"fragmentId": "field/textarea",
+                                        "size":1000
 									}
 								}
 							]
@@ -336,6 +337,7 @@
 								}
 							]
 						},
+                       
 
 						{
 							"legend": "Reason",
@@ -343,10 +345,10 @@
 							"fields": 
 							[
 								{
-									"type": "personAttribute",
+									"type": "obs",
 									"label": "reason",
-									"formFieldName": "reason",
-									"uuid": "1b1742db-dae5-4c6e-a479-9fe21c325b23",
+									"formFieldName": "obs.HGU.163114",
+									
 									"widget": 
 									{
 										"providerName": "uicommons",
