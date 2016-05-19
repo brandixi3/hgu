@@ -1,0 +1,106 @@
+<htmlform formUuid="0f606822-659e-40de-8ff7-bfb394a81a64"
+	formName="Patient Details" formVersion="0.1" formAddMetadata="yes"
+	formUILocation="patientDashboard.overallActions" formOrder="10"
+	formIcon="icon-user" formShowIf="" formDisplayStyle="Standard">
+    
+    
+    <macros>
+		paperFormId = (Fill this in)
+		headerColor =#009d8e
+		fontOnHeaderColor = white
+	</macros>
+
+	<style>
+		.section {
+			border: 1px solid $headerColor;
+			padding: 2px;
+			text-align: left;
+			margin-bottom: 1em;
+		}
+		.sectionHeader {
+			background-color: $headerColor;
+			color: $fontOnHeaderColor;
+			display: block;
+			padding: 2px;
+			font-weight: bold;
+		}
+		table.baseline-aligned td {
+			vertical-align: baseline;
+		}
+	</style>
+
+	<span style="float:right">Paper Form ID: $paperFormId</span>
+	<h2>HGU-office use (v1.21)</h2>
+
+	
+
+	<section headerLabel="For office use only">
+		<table class="baseline-aligned">
+			 <tr>
+				<td width="30%" >Serial No:</td>
+				<td width="70%" ><obs conceptId="163100" /></td>
+			</tr>
+                        <tr>
+				<td>Date:</td>
+				<td><encounterDate default="today"/></td>
+			</tr>
+
+			
+			<tr>
+				<td>Slide no</td>
+				<td><obs conceptId="163101" size="2"/> / <obs conceptId="163102" size="2" /> </td>
+			</tr>
+                       <tr>
+				<td>Location:</td>
+				<td><encounterLocation default="1"/></td>
+			</tr>
+                         <tr>
+				<td>Provider:</td>
+				<td><encounterProvider default="currentUser"/></td>
+			</tr>
+                        <tr><td>Sample collected </td><td>  <obs conceptId="163108"  style="yes_no"/>  </td> </tr>
+                       <tr><td>Report is ready </td><td><obs conceptId="163110" style="yes_no"/></td></tr>
+                        <tr><td>Patient informed</td><td><obs conceptId="163111" style="yes_no"/></td></tr>
+                        <tr><td>Report issued</td><td><obs conceptId="163112" style="yes_no"/></td></tr>
+                      
+			
+		</table>
+	</section>
+
+	<submit/>
+
+<!-- END OF FORM
+
+Simple examples to copy-and-paste. Full reference at http://wiki.openmrs.org/x/kg8z
+
+SECTION
+	<section headerLabel="\#. Title">
+		Content
+	</section>
+
+NUMERIC OBSERVATION
+	<obs conceptId="id-of-numeric-concept" labelText="Label before"/>
+
+DATE OBSERVATION
+	<obs conceptId="id-of-date-concept" labelText="Label before"/>
+
+CODED OBSERVATION
+(as a dropdown)
+	<obs conceptId="id-of-coded-concept" labelText="Label before"/>
+(as radio buttons)
+	<obs conceptId="id-of-coded-concept" labelText="Label before" style="radio"/>
+(as an autocomplete)
+	<obs conceptId="id-of-coded-concept" labelText="Label before" style="autocomplete" answerClasses="Diagnosis"/>
+(as a checkbox for a specific answer)
+	<obs conceptId="id-of-coded-concept" labelText="Label before" answerConceptId="id-of-answer-concept" answerLabel="label for answer"/>
+(as a dropdown with specific choices)
+	<obs conceptId="id-of-coded-concept" labelText="Label before" answerConceptIds="concept-id-1,concept-id-2,concept-id-3" answerLabels="Label 1,Label 2, Label 3"/>
+
+
+FREE TEXT OBSERVATION
+(as a normal text field)
+	<obs conceptId="id-of-text-concept" labelText="Label before"/>
+(as a textarea)
+	<obs conceptId="id-of-text-concept" labelText="Label before" rows="4" cols="80"/>
+-->
+</htmlform>
