@@ -21,5 +21,27 @@
 	<bean class="org.openmrs.ui.framework.StandardModuleUiConfiguration">
 		<property name="moduleId" value="hgu" />
 	</bean>
+	
+	 <!-- Includes the specified resources on every page in the module -->
+    <bean class="org.openmrs.ui.framework.page.GlobalResourceIncluder">
+		<property name="resources">
+			<list>
+                <bean class="org.openmrs.ui.framework.resource.Resource">
+                    <property name="category" value="css" />
+                    <property name="providerName" value="${project.parent.artifactId}" />
+                    <property name="resourcePath" value="styles/JsPedigrees.css" />
+					<!-- low priority to ensure that this CSS is loaded last, therefore being prevalent over other CSS -->
+                    <property name="priority" value="-101" />
+                </bean>
+                
+                <bean class="org.openmrs.ui.framework.resource.Resource">
+                    <property name="category" value="js" />
+                    <property name="providerName" value="${project.parent.artifactId}" />
+                    <property name="resourcePath" value="scripts/handleViewMode.js" />
+                    <property name="priority" value="11" />
+                </bean>
+         	</list>
+		</property>
+  </bean>
 
 </beans>

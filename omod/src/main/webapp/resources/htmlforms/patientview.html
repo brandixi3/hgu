@@ -1,0 +1,164 @@
+<htmlform formUuid="0d71dedb-2cd3-4251-b94d-0ce5f41f85ad"
+	formName="Patient Details" formVersion="0.1" formAddMetadata="yes"
+	formUILocation="patientDashboard.overallActions" formOrder="10"
+	formIcon="icon-user" formShowIf="" formDisplayStyle="Standard">
+
+
+<style>
+.section {
+	border: 1px solid$headerColor;
+	padding: 2px;
+	text-align: left;
+	margin-bottom: 1em;
+}
+
+.sectionHeader {
+	background-color: $headerColor;
+	color: $fontOnHeaderColor;
+	display: block;
+	padding: 2px;
+	font-weight: bold;
+}
+
+table.baseline-aligned td {
+	vertical-align: baseline;
+}
+</style>
+
+
+<section headerLabel="2. Demographic Information">
+	<table class="baseline-aligned">
+		<tr>
+			<td>Name:</td>
+			<td><lookup class="value" expression="patient.personName" /></td>
+		</tr>
+
+
+		<tr>
+			<td>Gender:</td>
+			<td><lookup class="value" expression="patient.gender" /></td>
+		</tr>
+		<tr>
+			<td>Birthdate:</td>
+			<td><lookup class="value"
+					complexExpression="#if( \$patient.birthdateEstimated ) ~#end" /> <lookup
+					class="value" expression="patient.birthdate" /> (Age: <lookup
+					class="value" expression="patient.age" />)</td>
+		</tr>
+
+
+		<tr>
+			<td>Telephone Number:</td>
+			<td><lookup class="value"
+					expression="personAttributes.get('Telephone Number')" /></td>
+		</tr>
+		<tr>
+			<td>Email:</td>
+			<td><lookup class="value"
+					expression="personAttributes.get('Patient Email')" /></td>
+		</tr>
+		<tr>
+			<th colspan="2">Mother details</th>
+		</tr>
+		<tr>
+			<td>Mother's name</td>
+			<td><lookup class="value"
+					expression="personAttributes.get('Mothers Name')" /></td>
+		</tr>
+
+		<tr>
+			<td>Mother's birthday</td>
+			<td><lookup class="value"
+					expression="personAttributes.get('Mothers Bday')" /></td>
+		</tr>
+		<tr>
+			<th colspan="2">Father details</th>
+		</tr>
+		<tr>
+			<td>Father's name</td>
+			<td><lookup class="value"
+					expression="personAttributes.get('Fathers Name')" /></td>
+		</tr>
+
+		<tr>
+			<td>Father's birthday</td>
+			<td><lookup class="value"
+					expression="personAttributes.get('Fathers Bday')" /></td>
+		</tr>
+		<tr>
+
+			<th colspan="2">Children details</th>
+		</tr>
+
+		<tr>
+			<td>First child name</td>
+			<td><lookup class="value"
+					expression="personAttributes.get('ChildOnes Name')" /></td>
+		</tr>
+
+		<tr>
+			<td>First child birthday</td>
+			<td><lookup class="value"
+					expression="personAttributes.get('Child Ones Bday')" /></td>
+		</tr>
+
+		<tr>
+			<td>First child gender</td>
+			<td><lookup class="value"
+					expression="personAttributes.get('ChildOnes Gender')" /></td>
+		</tr>
+		<tr>
+			<td>Second child name</td>
+			<td><lookup class="value"
+					expression="personAttributes.get('Child Twos Name')" /></td>
+		</tr>
+
+		<tr>
+			<td>Second child birthday</td>
+			<td><lookup class="value"
+					expression="personAttributes.get('Child Twos Bday')" /></td>
+		</tr>
+
+		<tr>
+			<td>Second child gender</td>
+			<td><lookup class="value"
+					expression="personAttributes.get('ChildTwos Gender')" /></td>
+		</tr>
+		<tr>
+			<td>Third child name</td>
+			<td><lookup class="value"
+					expression="personAttributes.get('Child Threes Name')" /></td>
+		</tr>
+
+		<tr>
+			<td>Third child birthday</td>
+			<td><lookup class="value"
+					expression="personAttributes.get('Child Threes Bday')" /></td>
+		</tr>
+
+		<tr>
+			<td>Third child gender</td>
+			<td><lookup class="value"
+					expression="personAttributes.get('ChildThrees Gender')" /></td>
+		</tr>
+		<!-- <tr>
+			<td>Aditional Info</td>
+			<td><obs conceptId="163113" /></td>
+		</tr> -->
+		<tr>
+			<th colspan="2">Clinician's Details</th>
+		</tr>
+		<tr>
+			<td>Referred By(Clinicain's Name)</td>
+			<td><lookup class="value"
+					expression="personAttributes.get('Reffered By')" /></td>
+		</tr>
+
+		<tr>
+			<td>Reason</td>
+			<td><lookup class="value"
+					expression="personAttributes.get('Reason')" /></td>
+		</tr>
+	</table>
+</section>
+</htmlform>
