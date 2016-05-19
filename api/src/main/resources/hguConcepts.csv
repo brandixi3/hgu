@@ -1,3 +1,4 @@
 LFHC Mapping	ICD-10 Mapping	Name	Short Name	Synonyms (comma-separated)	Description	Class	Is set	Datatype	Subconcepts (comma-separated)	Numeric - Unit	Numeric - Absolute High	Numeric - Critical High	Numeric - Normal High	Numeric - Normal Low	Numeric - Critical Low	Numeric - Absolute Low	Numeric - Allow decimals
 LFHC:163113		Additional Demographic Info	Additional Demographic Info			Misc		Text									
 LFHC:163114		Reffered Reason	Reffered Reason			Misc		Text									
+
