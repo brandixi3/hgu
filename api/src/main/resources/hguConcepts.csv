@@ -1,7 +1,10 @@
 LFHC Mapping	ICD-10 Mapping	Name	Short Name	Synonyms (comma-separated)	Description	Class	Is set	Datatype	Subconcepts (comma-separated)	Numeric - Unit	Numeric - Absolute High	Numeric - Critical High	Numeric - Normal High	Numeric - Normal Low	Numeric - Critical Low	Numeric - Absolute Low	Numeric - Allow decimals
 LFHC:163113		Additional Demographic Info	Additional Demographic Info			Misc		Text									
 LFHC:163114		Reffered Reason	Reffered Reason			Misc		Text									
-LFHC:163108		sample collected1						HGU-sample collected	Test		Boolean								
-LFHC:163110		Report								HGU-report	Test		Boolean
-LFHC:163111		Patient informed						HGU-Patient informed	Test	Boolean
-LFHC:163112		Report issued							HGU-Issued reports	Test	Booolean
+LFHC:163100		Serial No	Serial No			Test		Text									
+LFHC:163101		Serial No1	Serial No1			Test		Text									
+LFHC:163102		Serial No2	Serial No2			Test		Text									
+LFHC:163108		sample collected1	sample collected1			Test		Boolean									
+LFHC:163110		Report	Report			Test		Boolean									
+LFHC:163111		Patient informed	Patient informed			Test		Boolean									
+LFHC:163112		Report issued	Report issued			Test		Boolean									
