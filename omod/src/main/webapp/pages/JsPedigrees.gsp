@@ -1,7 +1,7 @@
 
 
 <%
-		ui.decorateWith("appui", "standardEmrPage");
+		
 		ui.includeCss("hgu", "JsPedigrees.css");
 	    ui.includeJavascript("hgu", "jspedigrees.nocache.js");
 	    ui.includeJavascript("hgu", "start-pedigrees.js");
