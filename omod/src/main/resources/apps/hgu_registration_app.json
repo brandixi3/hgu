@@ -64,6 +64,34 @@
 									[
 										"phone"
 									]
+								},
+								
+								{
+									"type": "personAttribute",
+									"label": "Mobile No1 ",
+									"formFieldName": "Mobile No 1",
+									"uuid": "fc7b499d-6628-41a0-8cc3-e0306fb15226",
+									"widget": 
+									{
+										"providerName": "uicommons",
+										"fragmentId": "field/text"
+									}
+
+									
+								},
+								
+								{
+									"type": "personAttribute",
+									"label": "Mobile No 2",
+									"formFieldName": "Mobile No2",
+									"uuid": "54511103-c279-465f-bc32-d8c5deed0470",
+									"widget": 
+									{
+										"providerName": "uicommons",
+										"fragmentId": "field/text"
+									}
+
+									
 								}
 							]
 						},
@@ -75,8 +103,8 @@
 								{
 									"type": "personAttribute",
 									"label": "Email address",
-									"formFieldName": "email",
-									"uuid": "00872f90-0baa-4dbd-8099-7b54fd02c7e2",
+									"formFieldName": "Email",
+									"uuid": "4b4eb89b-da3c-4135-b58a-6260af378812",
 									"widget": 
 									{
 										"providerName": "uicommons",
@@ -312,53 +340,9 @@
 						}
                         
 					]
-				},
-
-				{
-					"id": "clinicianInfo",
-					"label": "Clinician's Details",
-					"questions": 
-					[
-						{
-							"legend": "Referred By",
-							"id": "RefferedBy",
-							"fields": 
-							[
-								{
-									"type": "personAttribute",
-									"label": "Clinicain's Name",
-									"formFieldName": "clinicianName",
-									"uuid": "b942c89c-711b-448e-b641-473922df6b55",
-									"widget": 
-									{
-										"providerName": "uicommons",
-										"fragmentId": "field/text"
-									}
-								}
-							]
-						},
-                       
-
-						{
-							"legend": "Reason",
-							"id": "Reason",
-							"fields": 
-							[
-								{
-									"type": "obs",
-									"label": "reason",
-									"formFieldName": "obs.HGU:163114",
-									
-									"widget": 
-									{
-										"providerName": "uicommons",
-										"fragmentId": "field/textarea"
-									}
-								}
-							]
-						}
-					]
 				}
+
+				
 			]
 		}
 	},
