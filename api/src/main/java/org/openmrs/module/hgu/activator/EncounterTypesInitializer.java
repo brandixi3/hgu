@@ -39,6 +39,17 @@ public class EncounterTypesInitializer implements Initializer {
 			}
 		}
 		
+		{
+			String name = "physician’s details ";
+			String desc = "physician’s details ";
+			String uuid = "9b9c20df-873b-4b87-86b2-badbcb4d04a0";
+			EncounterType encounterType = es.getEncounterTypeByUuid(uuid);
+			if(encounterType == null) {
+				encounterType = new EncounterType(name, desc);
+				encounterType.setUuid(uuid);
+				es.saveEncounterType(encounterType);
+			}
+		}
 	}
 
 	/**

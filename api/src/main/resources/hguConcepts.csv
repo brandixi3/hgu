@@ -8,3 +8,13 @@ LFHC:163108		sample collected1	sample collected1			Test		Boolean
 LFHC:163110		Report	Report			Test		Boolean									
 LFHC:163111		Patient informed	Patient informed			Test		Boolean									
 LFHC:163112		Report issued	Report issued			Test		Boolean									
+LFHC:163115		Referred by	Referred by			Test		Text									
+LFHC:163116		Station	Station			Test		Text									
+LFHC:163117		Consultants contact number	Consultants contact number			Test		Text									
+LFHC:163118		Consultants email	Consultants email			Test		Text									
+LFHC:163119		Reason for the referral	Reason for the referral			Test		Text									
+LFHC:163120		Diagnosis	Diagnosis			Test		Text									
+
+
+
+

@@ -21,6 +21,11 @@ public class HGUFormsConstants {
 	public static final String HGU_CHILD_THREE_NAME_UUID ="44032747-90ed-4d90-9aa2-9677ae0090d5";
 	public static final String HGU_CHILD_THREE_BIRTHDAY_UUID ="62cb1340-2636-4926-a66e-33961a76a825";
 	public static final String HGU_CHILD_THREE_GENDER_UUID ="12902bb1-d662-4df1-b037-efc5074b083d";
+	public static final String HGU_EMAIL_UUID ="4b4eb89b-da3c-4135-b58a-6260af378812";
+	public static final String HGU_MOBILE_NO1_UUID ="fc7b499d-6628-41a0-8cc3-e0306fb15226";
+	public static final String HGU_MOBILE_NO2_UUID ="54511103-c279-465f-bc32-d8c5deed0470";
+
+
 	
 	
 	
