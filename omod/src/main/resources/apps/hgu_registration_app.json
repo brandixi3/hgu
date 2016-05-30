@@ -113,6 +113,21 @@
                                     
                                    
 									
+								},
+								
+								{
+									"type": "personAttribute",
+									"label": " Additional Email address",
+									"formFieldName": "Email No 2",
+									"uuid": "a475cf61-1da5-4543-88d5-27aef146fdd6",
+									"widget": 
+									{
+										"providerName": "uicommons",
+										"fragmentId": "field/text"
+                                    }
+                                    
+                                   
+									
 								}
 							]
 						}

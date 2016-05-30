@@ -37,15 +37,15 @@ formName="HGU-consultantDetails" formVersion="0.1" formAddMetadata="yes"
 		<table class="baseline-aligned">
 			<tr>
 				<td>Date:</td>
-				<td><encounterDate default="today"/></td>
+				<td><encounterDate default="today" /></td>
 			</tr>
 			<tr>
 				<td>Location:</td>
-				<td><encounterLocation/></td>
+				<td><encounterLocation default="SessionAttribute:emrContext.sessionLocationId" widget="hidden"  type="autocomplete"/></td>
 			</tr>
 			<tr>
 				<td>Provider:</td>
-				<td><encounterProvider/></td>
+				<td><encounterProvider  default="currentUser" widget="hidden"  type="autocomplete"/></td>
 			</tr>
 		</table>
 	</section>
@@ -78,6 +78,7 @@ formName="HGU-consultantDetails" formVersion="0.1" formAddMetadata="yes"
 					
 				
 			</tr>
+                        <tr><td>Consanguinity </td><td>  <obs conceptId="HGU:163122"  style="yes_no"/>  </td> </tr>
 			
 		</table>
 	</section>
