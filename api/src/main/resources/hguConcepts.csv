@@ -15,6 +15,7 @@ HGU:163118		Consultants email	Consultants email			Test		Text
 HGU:163119		Reason for the referral	Reason for the referral			Test		Text									
 HGU:163120		Diagnosis	Diagnosis			Test		Text									
 HGU:163122		Consanguinity	Consanguinity			Test		Boolean									
+HGU:163123		Discription	Discription			Test		Text									
 
 
 

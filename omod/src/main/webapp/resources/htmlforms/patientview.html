@@ -26,7 +26,7 @@ table.baseline-aligned td {
 </style>
 
 
-<section headerLabel="2. Demographic Information">
+<section headerLabel="Patient Information">
 	<table class="baseline-aligned">
 		<tr>
 			<td>Name:</td>
@@ -45,17 +45,38 @@ table.baseline-aligned td {
 					class="value" expression="patient.birthdate" /> (Age: <lookup
 					class="value" expression="patient.age" />)</td>
 		</tr>
-
-
+                <tr>
+			<th colspan="2">Contact details</th>
+		</tr>
+               <tr>
+				<td>Address:</td>
+				<td><lookup class="value" expression="patient.personAddress" />
+</td>
+			</tr>
 		<tr>
 			<td>Telephone Number:</td>
 			<td><lookup class="value"
 					expression="personAttributes.get('Telephone Number')" /></td>
 		</tr>
+               <tr>
+			<td>Mobile Number 1:</td>
+			<td><lookup class="value"
+					expression="personAttributes.get('Mobile No 1')" /></td>
+		</tr>
+                  <tr>
+			<td>Mobile Number 2:</td>
+			<td><lookup class="value"
+					expression="personAttributes.get('Mobile No 2')" /></td>
+		</tr>
 		<tr>
 			<td>Email:</td>
 			<td><lookup class="value"
-					expression="personAttributes.get('Patient Email')" /></td>
+					expression="personAttributes.get('Email')" /></td>
+		</tr>
+                <tr>
+			<td>Additional email address :</td>
+			<td><lookup class="value"
+					expression="personAttributes.get('Email No 2')" /></td>
 		</tr>
 		<tr>
 			<th colspan="2">Mother details</th>
@@ -143,7 +164,7 @@ table.baseline-aligned td {
 		</tr>
 		<tr>
 			<td>Aditional Info</td>
-			<td><obs conceptId="HGU:163113" /></td>
+			<td><obs conceptId="HGU:163113" rows="4" cols="80" /></td>
 		</tr> 
 		
 	</table>
