@@ -136,17 +136,17 @@ formDisplayStyle="Simple"
 	</p>
 </div>
 
-<section id="lab-test-order" sectionTag="section" headerStyle="title" headerCode="lfhcforms.labtestorder.section.labtestorder">
+<section id="lab-test-order" sectionTag="section" headerStyle="title" headerCode="Lab Test Orders">
 	<fieldset id="cbc-fieldset">
 		<!-- Complete Blood Count -->
-		<legend>Blood Tests</legend>
-		<h3><uimessage code="lfhcforms.labtestorder.legend.completebloodcount"/></h3>
+		<legend>Tests</legend>
+		<h3>HGU Test List</h3>
 
 		<ifMode mode="enter">
 			<div>
 				<span>
 					<small>
-						<a><label><uimessage code="lfhcforms.labtestorder.checkuncheckall"/><input id="checkAll" class="checkAll" type="checkbox" /></label></a>
+						<a><label>check all<input id="checkAll" class="checkAll" type="checkbox" /></label></a>
 					</small>
 				</span>
 				<hr/>
@@ -156,7 +156,7 @@ formDisplayStyle="Simple"
 			<template>
 				<div class="hiddenObs" style="display:none;">
 					<p>
-						<obs id="{n}" class="toCheck" conceptId="LFHC:1276" answerConceptId="{m}"/>
+						<obs id="{n}" class="toCheck" conceptId="HGU:163121" answerConceptId="{m}"/>
 					</p>
 					<ifMode mode="enter" include="false">
 						<p>
@@ -171,15 +171,29 @@ formDisplayStyle="Simple"
 					</ifMode>
 				</div>
 			</template>
-			<render n="100" m="CIEL:1015" u="true" />
-			<render n="101" m="CIEL:21" u="true" />
-			<render n="102" m="CIEL:1017" u="true" />
-			<render n="103" m="CIEL:1018" u="true" />
-			<render n="104" m="CIEL:851" u="true" />
-			<render n="105" m="CIEL:729" u="true" />
-			<render n="106" m="CIEL:679" u="true" />
-			<render n="107" m="CIEL:1016" u="true" />
-			<render n="108" m="CIEL:678" u="true" />
+			<render n="100" m="HGU:163145" u="true" />
+			<render n="101" m="HGU:163146" u="true" />
+			<render n="102" m="HGU:163124" u="true" />
+			<render n="103" m="HGU:163125" u="true" />
+			<render n="104" m="HGU:163126" u="true" />
+			<render n="105" m="HGU:163127" u="true" />
+			<render n="106" m="HGU:163128" u="true" />
+			<render n="107" m="HGU:163129" u="true" />
+			<render n="108" m="HGU:163130" u="true" />
+			<render n="100" m="HGU:163131" u="true" />
+			<render n="101" m="HGU:163132" u="true" />
+			<render n="102" m="HGU:163133" u="true" />
+			<render n="103" m="HGU:163134" u="true" />
+			<render n="104" m="HGU:163135" u="true" />
+			<render n="105" m="HGU:163136" u="true" />
+			<render n="106" m="HGU:163137" u="true" />
+			<render n="107" m="HGU:163138" u="true" />
+			<render n="108" m="HGU:163139" u="true" />
+			<render n="103" m="HGU:163140" u="true" />
+			<render n="104" m="HGU:163141" u="true" />
+			<render n="105" m="HGU:163142" u="true" />
+			<render n="106" m="HGU:163143" u="true" />
+			<render n="107" m="HGU:163144" u="true" />
 		</repeat>
 	</fieldset>
 	
