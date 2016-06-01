@@ -30,11 +30,11 @@
 	</style>
 
 	<span style="float:right">Paper Form ID: $paperFormId</span>
-	<h2>HGU-office use (v1.21)</h2>
+	<h2>HGU-office use </h2>
 
 	
 
-	<section headerLabel="For office use only">
+	<section headerLabel="For office use ">
 		<table class="baseline-aligned">
 			 <tr>
 				<td width="30%" >Serial No:</td>
@@ -52,11 +52,11 @@
 			</tr>
                        <tr>
 				<td>Location:</td>
-				<td><encounterLocation default="1"/></td>
+				<td><encounterLocation  default="SessionAttribute:emrContext.sessionLocationId"  type="autocomplete"/></td>
 			</tr>
                          <tr>
 				<td>Provider:</td>
-				<td><encounterProvider default="currentUser"/></td>
+				<td><encounterProvider default="currentUser"  type="autocomplete"/></td>
 			</tr>
                        <tr><td>Sample collected </td><td>  <obs conceptId="HGU:163108"  style="yes_no"/>  </td> </tr>
                        <tr><td>Report is ready </td><td><obs conceptId="HGU:163110" style="yes_no"/></td></tr>

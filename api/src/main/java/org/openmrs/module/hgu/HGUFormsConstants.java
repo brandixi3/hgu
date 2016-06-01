@@ -24,6 +24,7 @@ public class HGUFormsConstants {
 	public static final String HGU_EMAIL_UUID ="4b4eb89b-da3c-4135-b58a-6260af378812";
 	public static final String HGU_MOBILE_NO1_UUID ="fc7b499d-6628-41a0-8cc3-e0306fb15226";
 	public static final String HGU_MOBILE_NO2_UUID ="54511103-c279-465f-bc32-d8c5deed0470";
+	public static final String HGU_EMAIL2_UUID ="a475cf61-1da5-4543-88d5-27aef146fdd6";
 
 
 	

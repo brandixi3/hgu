@@ -14,9 +14,9 @@ HGU:163117		Consultants contact number	Consultants contact number			Test		Text
 HGU:163118		Consultants email	Consultants email			Test		Text									
 HGU:163119		Reason for the referral	Reason for the referral			Test		Text									
 HGU:163120		Diagnosis	Diagnosis			Test		Text									
-HGU:163121		HGU Lab Set			Tests for Humen Genetics Unit	LabSet	Yes	Coded	HGU:163122,HGU:163123,HGU:163124,HGU:163125,HGU:163126,HGU:163127,HGU:163128,HGU:163129,HGU:163130,HGU:163131,HGU:163132,HGU:163133,HGU:163134,HGU:163135,HGU:163136,HGU:163137,HGU:163138,HGU:163139,HGU:163140,HGU:163141,HGU:163142,HGU:163143,HGU:163144								
-HGU:163122		HGU001 - α Thalassemia Deletion Test			α Thalassemia	Test	No	Text									
-HGU:163123		HGU002 - b Thalassemia Point Mutation Test			b Thalassemia	Test	No	Text									
+HGU:163121		HGU Lab Set			Tests for Humen Genetics Unit	LabSet	Yes	Coded	HGU:163145,HGU:163146,HGU:163124,HGU:163125,HGU:163126,HGU:163127,HGU:163128,HGU:163129,HGU:163130,HGU:163131,HGU:163132,HGU:163133,HGU:163134,HGU:163135,HGU:163136,HGU:163137,HGU:163138,HGU:163139,HGU:163140,HGU:163141,HGU:163142,HGU:163143,HGU:163144								
+HGU:163145		HGU001 - α Thalassemia Deletion Test			α Thalassemia	Test	No	Text									
+HGU:163146		HGU002 - b Thalassemia Point Mutation Test			b Thalassemia	Test	No	Text									
 HGU:163124		HGU003 - b Thalassemia 619bp Deletion Test			b Thalassemia	Test	No	Text									
 HGU:163125		HGU004 - HFE C282Y and H63D Mutation Testing			Hereditary Haemachromotosis	Test	No	Text									
 HGU:163126		HGU005 - JAK2 V617F Mutation Test			Myeloproliferative Neoplasms [e.g. Polycythemia Rubra Vera]	Test	No	Text									
@@ -38,3 +38,5 @@ HGU:163141		HGUF007 - FISH - inv(16)(p13.1q22) or t(16;16)(p13.1;q22); CBFB-MYH1
 HGU:163142		HGUF008 - FISH - t(15;17)(q22;q12); PML-RARA			"Acute Myeloid Leukaemia (AML)"	Test	No	Text									
 HGU:163143		HGUF009 - FISH - 5q			"Myelodysplastic Syndromes (MDS)"	Test	No	Text									
 HGU:163144		HGUF010 - FISH - 7q			"Myelodysplastic Syndromes (MDS)"	Test	No	Text									
+HGU:163122		Consanguinity	Consanguinity			Test		Boolean									
+HGU:163123		Discription	Discription			Test		Text									

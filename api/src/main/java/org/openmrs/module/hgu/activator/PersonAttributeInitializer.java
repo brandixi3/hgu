@@ -251,6 +251,20 @@ public class PersonAttributeInitializer implements Initializer {
 		Context.getPersonService().savePersonAttributeType(type);
 	}
 		
+		{
+			String uuid = HGUFormsConstants.HGU_EMAIL2_UUID;
+			PersonAttributeType type = Context.getPersonService().getPersonAttributeTypeByUuid(uuid);
+			if(type == null) {
+				type = new PersonAttributeType();
+				type.setUuid(uuid);
+			}
+			type.setName("Email No 2");
+			type.setDescription("Patient's email");
+			type.setFormat("java.lang.String");
+			Context.getPersonService().savePersonAttributeType(type);
+		}
+		
+		
 			
 	}
 
