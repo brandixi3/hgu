@@ -60,7 +60,7 @@ public class HGUConceptsInitializer implements Initializer {
 	/*
 	 * Required headers that MUST be found on the concepts CSV file to be imported.
 	 */
-	protected final static String CSV_MAPPING_LFHC = "LFHC Mapping";
+	protected final static String CSV_MAPPING_HGU = "HGU Mapping";
 	protected final static String CSV_MAPPING_ICD10 = "ICD-10 Mapping";
 	protected final static String CSV_NAME = "Name";
 	protected final static String CSV_SHORTNAME = "Short Name";
@@ -83,7 +83,7 @@ public class HGUConceptsInitializer implements Initializer {
 	protected final Set<String> requiredHeaders = new HashSet<String>();
 	
 	public HGUConceptsInitializer() {
-		requiredHeaders.add(CSV_MAPPING_LFHC);
+		requiredHeaders.add(CSV_MAPPING_HGU);
 		requiredHeaders.add(CSV_MAPPING_ICD10);
 		requiredHeaders.add(CSV_NAME);
 		requiredHeaders.add(CSV_SHORTNAME);
@@ -263,7 +263,7 @@ public class HGUConceptsInitializer implements Initializer {
 	                map.put(string, val);
 	            }
 
-                String lfhcId = map.get(CSV_MAPPING_LFHC);
+                String lfhcId = map.get(CSV_MAPPING_HGU);
                 concepts.put(lfhcId, map);
 	        }
 	        
@@ -296,7 +296,7 @@ public class HGUConceptsInitializer implements Initializer {
 			//
 			// Initial sanity checks.
 			//
-			String lfhcMappedId = mappedConcept.get(CSV_MAPPING_LFHC);
+			String lfhcMappedId = mappedConcept.get(CSV_MAPPING_HGU);
 			if(lfhcMappedId.isEmpty()) {
 				log.warn("Concept found with no LFHC mapping. Skipping through to next concept in the CSV source.");
 				continue;

@@ -30,6 +30,6 @@ public class HGUFormsConstants {
 	
 	
 	public final static String HGU_CONCEPT_SOURCE = "HGU";
-	public final static String CIEL_CONCEPT_SOURCE = "CEIL";
+	public final static String CIEL_CONCEPT_SOURCE = "CIEL";
 		
 }
