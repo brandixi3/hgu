@@ -48,11 +48,16 @@ table.baseline-aligned td {
                 <tr>
 			<th colspan="2">Contact details</th>
 		</tr>
-          <!--     <tr>
+               <tr>
 				<td>Address:</td>
-				<td><lookup class="value" expression="patient.personAddress" />
+				<td> <lookup class="value" expression="patient.personAddress.address1" />,
+                                        <lookup class="value" expression="patient.personAddress.address2" />,
+                                        <lookup class="value" expression="patient.personAddress.cityVillage" />,
+                                        <lookup class="value" expression="patient.personAddress.stateProvince" />,
+                                        <lookup class="value" expression="patient.personAddress.postalCode" />,                                     
+                                        <lookup class="value" expression="patient.personAddress.country" />
 </td>
-			</tr> -->
+			</tr> 
 		<tr>
 			<td>Telephone Number:</td>
 			<td><lookup class="value"
