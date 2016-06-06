@@ -7,6 +7,7 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedHashMap;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
@@ -222,7 +223,7 @@ public class HGUConceptsInitializer implements Initializer {
 
 		final InputStream inputStream = resourceLoader.getResourceAsStream(csvPath); 
 		
-		Map<String, Map<String, String>> concepts = new HashMap<String, Map<String, String>>();
+		LinkedHashMap<String, Map<String, String>> concepts = new LinkedHashMap<String, Map<String, String>>();
 		try {
 			
 			CSVReader csvReader = new CSVReader(new InputStreamReader(inputStream), CSV_DELIMITER);
@@ -288,7 +289,7 @@ public class HGUConceptsInitializer implements Initializer {
 		
 		ConceptSource lfhcSource = cs.getConceptSourceByName(HGUFormsConstants.HGU_CONCEPT_SOURCE);
 		
-		Map<String, Concept> conceptsToSave = new HashMap<String, Concept>(); 
+		Map<String, Concept> conceptsToSave = new LinkedHashMap<String, Concept>(); 
 		Map<String, String> sets = new HashMap<String, String>();	// We hold the concept lists (sets or answers) until all concepts are created
 		
 		for(Map<String, String> mappedConcept : mappedConcepts.values()) {
