@@ -13,6 +13,7 @@ import org.openmrs.module.hgu.activator.HGUConceptsInitializer;
 import org.openmrs.module.hgu.activator.HtmlFormsInitializer;
 import org.openmrs.module.hgu.activator.Initializer;
 import org.openmrs.module.hgu.activator.PersonAttributeInitializer;
+import org.openmrs.module.hgu.activator.RelationshipTypesInitializer;
 
 // TODO: Auto-generated Javadoc
 /**
@@ -40,6 +41,7 @@ public class HumanGeneticsModuleActivator implements ModuleActivator {
 		l.add(new HtmlFormsInitializer());
 		l.add(new HGUConceptsInitializer());
 		l.add(new EncounterTypesInitializer());
+		l.add(new RelationshipTypesInitializer());
 		return l;
 	}
 	
