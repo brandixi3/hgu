@@ -23,14 +23,21 @@
 table.baseline-aligned td {
 	vertical-align: baseline;
 }
+
+
+.value { color: black; }
+
+
+
 </style>
 
-
+ 
 <section headerLabel="Patient Information">
 	<table class="baseline-aligned">
+
 		<tr>
 			<td>Name:</td>
-			<td><lookup class="value" expression="patient.personName" /></td>
+			<td><lookup style="color:red" class="value" expression="patient.personName" /></td>
 		</tr>
 
 
@@ -169,9 +176,49 @@ table.baseline-aligned td {
 		</tr>
 		<tr>
 			<td>Aditional Info</td>
-			<td><obs conceptId="HGU:163113" rows="4" cols="80" /></td>
+			<td><lookup  class="value" expression="fn.latestObs('HGU:163113').valueText"/>
+   </td>
 		</tr> 
-		
+                <tr>
+			<th colspan="2">Consultant Deatails</th>
+		</tr>
+               <tr>
+			<td>Referred by (Consultants Name)</td>
+			<td> <lookup  class="value" expression="fn.latestObs('HGU:163115').valueText"/>
+   
+
+					  </td>
+		</tr> 
+                  <tr>
+			<td>Station</td>
+			<td> <lookup  class="value" expression="fn.latestObs('HGU:163116').valueText"/>
+   
+
+					  </td>
+		</tr> 
+               <tr>
+			<td>Consultants contact number</td>
+			<td> <lookup  class="value" expression="fn.latestObs('HGU:163117').valueText"/>
+   
+
+					  </td>
+		</tr> 
+                  <tr>
+			<td>Consultants email</td>
+			<td> <lookup  class="value" expression="fn.latestObs('HGU:163118').valueText"/>
+   
+
+					  </td>
+		</tr> 
+                 <tr>
+			<td>Reason for the referral</td>
+			<td> <lookup  class="value" expression="fn.latestObs('HGU:163119').valueText"/>
+   
+
+					  </td>
+		</tr> 
+
+	
 	</table>
 </section>
 </htmlform>

@@ -27,6 +27,21 @@
 		table.baseline-aligned td {
 			vertical-align: baseline;
 		}
+
+             .value{
+                    color:black;
+              }
+           
+           .radio-style input,.radio-style label{
+              float:left;
+              }
+              .radio-style input[type=radio]{
+                  margin-top: 8px;
+              }
+              .radio-style label{
+    position: relative;
+    top: -4px;
+              }
 	</style>
 
 	<span style="float:right">Paper Form ID: $paperFormId</span>
@@ -46,9 +61,21 @@
 			</tr>
 
 			
-			<tr>
-				<td>Slide no</td>
-				<td><obs conceptId="HGU:163101" size="2"/> / <obs conceptId="HGU:163102" size="2" /> </td>
+			
+                        <tr>
+				<td>Test no</td>
+				<td>
+<lookup complexExpression="#foreach($obs in  $fn.latestEncounter(aa153c0-5e73-44ac-adc6-122eb898fd41).obs)
+                                           $obs.valueCoded.name 
+                                                   &lt;br &gt;
+													 
+                                                 #end" 
+                                                 
+                                                class="value" /> 
+
+
+
+ </td>
 			</tr>
                        <tr>
 				<td>Location:</td>
@@ -58,10 +85,11 @@
 				<td>Provider:</td>
 				<td><encounterProvider default="currentUser"  type="autocomplete"/></td>
 			</tr>
-                       <tr><td>Sample collected </td><td>  <obs conceptId="HGU:163108"  style="yes_no"/>  </td> </tr>
-                       <tr><td>Report is ready </td><td><obs conceptId="HGU:163110" style="yes_no"/></td></tr>
-                       <tr><td>Patient informed</td><td><obs conceptId="HGU:163111" style="yes_no"/></td></tr>
-                       <tr><td>Report issued</td><td><obs conceptId="HGU:163112" style="yes_no"/></td></tr>
+
+                       <tr><td>Sample collected </td><td class="radio-style" >  <obs conceptId="HGU:163108"  style="yes_no"  />  </td> </tr>
+                       <tr><td >Report is ready </td><td class="radio-style"><obs conceptId="HGU:163110" style="yes_no"  /></td></tr>
+                       <tr><td >Patient informed</td><td class="radio-style"><obs conceptId="HGU:163111" style="yes_no"  class="radio"/></td></tr>
+                       <tr><td >Report issued</td><td class="radio-style"><obs conceptId="HGU:163112" style="yes_no"  class="radio"/></td></tr>
                       
 			
 		</table>
