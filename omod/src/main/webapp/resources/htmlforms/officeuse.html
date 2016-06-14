@@ -65,7 +65,9 @@
                         <tr>
 				<td>Test no</td>
 				<td>
-<lookup complexExpression="#foreach($obs in  $fn.latestEncounter(aa153c0-5e73-44ac-adc6-122eb898fd41).obs)
+<lookup complexExpression="#foreach($obs in  $fn.latestEncounter('39deb891-8dc6-451b-9361-dbf564f27250').obs)
+
+
                                            $obs.valueCoded.name 
                                                    &lt;br &gt;
 													 
@@ -77,6 +79,7 @@
 
  </td>
 			</tr>
+
                        <tr>
 				<td>Location:</td>
 				<td><encounterLocation  default="SessionAttribute:emrContext.sessionLocationId"  type="autocomplete"/></td>
