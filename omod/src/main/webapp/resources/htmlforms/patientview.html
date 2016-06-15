@@ -36,17 +36,17 @@ table.baseline-aligned td {
 	<table class="baseline-aligned">
 
 		<tr>
-			<td>Name:</td>
+			<td>Name</td>
 			<td><lookup style="color:red" class="value" expression="patient.personName" /></td>
 		</tr>
 
 
 		<tr>
-			<td>Gender:</td>
+			<td>Gender</td>
 			<td><lookup class="value" expression="patient.gender" /></td>
 		</tr>
 		<tr>
-			<td>Birthdate:</td>
+			<td>Birthdate</td>
 			<td><lookup class="value"
 					complexExpression="#if( \$patient.birthdateEstimated ) ~#end" /> <lookup
 					class="value" expression="patient.birthdate" /> (Age: <lookup
@@ -56,7 +56,7 @@ table.baseline-aligned td {
 			<th colspan="2">Contact details</th>
 		</tr>
                <tr>
-				<td>Address:</td>
+				<td>Address</td>
 				<td> <lookup class="value" expression="patient.personAddress.address1" />,
                                         <lookup class="value" expression="patient.personAddress.address2" />,
                                         <lookup class="value" expression="patient.personAddress.cityVillage" />,
@@ -66,27 +66,27 @@ table.baseline-aligned td {
 </td>
 			</tr> 
 		<tr>
-			<td>Telephone Number:</td>
+			<td>Telephone Number</td>
 			<td><lookup class="value"
 					expression="personAttributes.get('Telephone Number')" /></td>
 		</tr>
                <tr>
-			<td>Mobile Number 1:</td>
+			<td>Mobile Number 1</td>
 			<td><lookup class="value"
 					expression="personAttributes.get('Mobile No 1')" /></td>
 		</tr>
                   <tr>
-			<td>Mobile Number 2:</td>
+			<td>Mobile Number 2</td>
 			<td><lookup class="value"
 					expression="personAttributes.get('Mobile No 2')" /></td>
 		</tr>
 		<tr>
-			<td>Email:</td>
+			<td>Email</td>
 			<td><lookup class="value"
 					expression="personAttributes.get('Email')" /></td>
 		</tr>
                 <tr>
-			<td>Additional email address :</td>
+			<td>Additional email address </td>
 			<td><lookup class="value"
 					expression="personAttributes.get('Email No 2')" /></td>
 		</tr>
