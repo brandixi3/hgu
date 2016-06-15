@@ -1,0 +1,119 @@
+<htmlform formUuid="54ed2dd0-8071-4d15-b8ea-71bf6c50c1dc"
+	formName="HGU-File_Upload_Form" formVersion="1.0" formAddMetadata="yes"
+	 formOrder="10"
+	formIcon="icon-user" formShowIf="" formDisplayStyle="Standard" formEncounterType="4eeb3fd8-d0b8-4821-81db-a95028030d49">
+
+<macros>
+		paperFormId = (Fill this in)
+		headerColor =#009d8e
+		fontOnHeaderColor = white
+	</macros>
+
+	<style>
+		.section {
+			border: 1px solid $headerColor;
+			padding: 2px;
+			text-align: left;
+			margin-bottom: 1em;
+		}
+		.sectionHeader {
+			background-color: $headerColor;
+			color: $fontOnHeaderColor;
+			display: block;
+			padding: 2px;
+			font-weight: bold;
+		}
+		table.baseline-aligned td {
+			vertical-align: baseline;
+		}
+	</style>
+        <h2>File upload form (v1.0)</h2>
+
+	
+
+	<section headerLabel="Test Results">
+		<table class="baseline-aligned">
+                        <tr>
+				<td>Date:</td>
+				<td><encounterDate default="today"/></td>
+			</tr>
+                       <tr>
+				<td>Location:</td>
+				<td><encounterLocation default="SessionAttribute:emrContext.sessionLocationId"/></td>
+			</tr>
+                         <tr>
+				<td>Provider:</td>
+				<td><encounterProvider default="currentUser"/></td>
+			</tr>
+
+                       <tr>
+				<td >Test 1</td>
+				<td ><obs conceptId="HGU:163147" /></td>
+			</tr>
+                        <tr>
+				<td >Test 2</td>
+				<td ><obs conceptId="HGU:163147" /></td>
+			</tr>
+                        <tr>
+				<td >Test 3</td>
+				<td ><obs conceptId="HGU:163147" /></td>
+			</tr>
+                        <tr>
+				<td >Test 4</td>
+				<td ><obs conceptId="HGU:163147" /></td>
+			</tr>
+                        <tr>
+				<td >Test 5</td>
+				<td ><obs conceptId="HGU:163147" /></td>
+			</tr>
+	
+		</table>
+               </section>
+                <section headerLabel="Other Files">
+		<table class="baseline-aligned">
+                       <tr>
+				<td >File 1</td>
+				<td ><obs conceptId="HGU:163148" /></td>
+			</tr>
+                        <tr>
+				<td >File 2</td>
+				<td ><obs conceptId="HGU:163148" /></td>
+			</tr>
+                        <tr>
+				<td >File 3</td>
+				<td ><obs conceptId="HGU:163148" /></td>
+			</tr>
+                        <tr>
+				<td >File 4</td>
+				<td ><obs conceptId="HGU:163148" /></td>
+			</tr>
+                        <tr>
+				<td >File 5</td>
+				<td ><obs conceptId="HGU:163148" /></td>
+			</tr>
+                        <tr>
+				<td >File 6</td>
+				<td ><obs conceptId="HGU:163148" /></td>
+			</tr>
+                        <tr>
+				<td >File 7</td>
+				<td ><obs conceptId="HGU:163148" /></td>
+			</tr>
+                        <tr>
+				<td >File 8</td>
+				<td ><obs conceptId="HGU:163148" /></td>
+			</tr>
+                        <tr>
+				<td >File 9</td>
+				<td ><obs conceptId="HGU:163148" /></td>
+			</tr>
+                        <tr>
+				<td >File 10</td>
+				<td ><obs conceptId="HGU:163148" /></td>
+			</tr>
+	
+		</table>
+               </section>
+               <submit/>
+
+</htmlform>

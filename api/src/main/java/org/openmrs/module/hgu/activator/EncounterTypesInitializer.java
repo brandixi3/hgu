@@ -50,6 +50,18 @@ public class EncounterTypesInitializer implements Initializer {
 				es.saveEncounterType(encounterType);
 			}
 		}
+		//file uploader encounter type
+		{
+			String name = "uploaded file ";
+			String desc = "store image or file ";
+			String uuid = "4eeb3fd8-d0b8-4821-81db-a95028030d49";
+			EncounterType encounterType = es.getEncounterTypeByUuid(uuid);
+			if(encounterType == null) {
+				encounterType = new EncounterType(name, desc);
+				encounterType.setUuid(uuid);
+				es.saveEncounterType(encounterType);
+			}
+		}
 	}
 
 	/**

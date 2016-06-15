@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 HGU Mapping	ICD-10 Mapping	Name	Short Name	Synonyms (comma-separated)	Description	Class	Is set	Datatype	Subconcepts (comma-separated)	Numeric - Unit	Numeric - Absolute High	Numeric - Critical High	Numeric - Normal High	Numeric - Normal Low	Numeric - Critical Low	Numeric - Absolute Low	Numeric - Allow decimals	Complex Handler Type
 HGU:163113		Additional Demographic Info	Additional Demographic Info			Misc		Text										
 HGU:163114		Reffered Reason	Reffered Reason			Misc		Text										
@@ -41,4 +40,7 @@ HGU:163143		HGUF009 - FISH - 5q			"Myelodysplastic Syndromes (MDS)"	Test	No	Text
 HGU:163144		HGUF010 - FISH - 7q			"Myelodysplastic Syndromes (MDS)"	Test	No	Text										
 HGU:163122		Consanguinity	Consanguinity			Test		Boolean										
 HGU:163123		Discription	Discription			Test		Text										
+HGU:163147		ImageUpload	image			Test		Complex										ImageHandler
+HGU:163148		FileUpload	file			Test		Complex										ImageHandler
+
 
