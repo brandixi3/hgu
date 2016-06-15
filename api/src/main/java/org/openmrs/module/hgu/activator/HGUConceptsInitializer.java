@@ -33,6 +33,7 @@ import org.hibernate.exception.ConstraintViolationException;
 import org.openmrs.Concept;
 import org.openmrs.ConceptAnswer;
 import org.openmrs.ConceptClass;
+import org.openmrs.ConceptComplex;
 import org.openmrs.ConceptDatatype;
 import org.openmrs.ConceptDescription;
 import org.openmrs.ConceptMap;
@@ -44,8 +45,8 @@ import org.openmrs.ConceptSource;
 import org.openmrs.api.ConceptService;
 import org.openmrs.api.DuplicateConceptNameException;
 import org.openmrs.api.context.Context;
-import org.openmrs.module.hgu.HumanGeneticsModuleActivator;
 import org.openmrs.module.hgu.HGUFormsConstants;
+import org.openmrs.module.hgu.HumanGeneticsModuleActivator;
 import org.openmrs.module.hguforms.util.DefaultResouceLoaderImpl;
 import org.openmrs.module.hguforms.util.ResourceLoader;
 
@@ -79,6 +80,8 @@ public class HGUConceptsInitializer implements Initializer {
 	protected final static String CSV_NUMERIC_NLO = "Numeric - Normal Low";
 	protected final static String CSV_NUMERIC_CLO = "Numeric - Critical Low";
 	protected final static String CSV_NUMERIC_ALO = "Numeric - Absolute Low";
+	protected final static String CSV_COMPLEX_HANDLER = "Complex Handler Type";
+	
 	
 	// Array of the minimal set of headers to be found in the import CSV.
 	protected final Set<String> requiredHeaders = new HashSet<String>();
@@ -102,6 +105,8 @@ public class HGUConceptsInitializer implements Initializer {
 		requiredHeaders.add(CSV_NUMERIC_NLO);
 		requiredHeaders.add(CSV_NUMERIC_CLO);
 		requiredHeaders.add(CSV_NUMERIC_ALO);
+		requiredHeaders.add(CSV_COMPLEX_HANDLER);
+		
 	}
 	
 	/*
@@ -265,6 +270,13 @@ public class HGUConceptsInitializer implements Initializer {
 	            }
 
                 String lfhcId = map.get(CSV_MAPPING_HGU);
+                
+                if(lfhcId.equals("164147")){
+    				
+    				System.out.println("got it");
+    			}
+    			
+                
                 concepts.put(lfhcId, map);
 	        }
 	        
@@ -302,6 +314,7 @@ public class HGUConceptsInitializer implements Initializer {
 				log.warn("Concept found with no LFHC mapping. Skipping through to next concept in the CSV source.");
 				continue;
 			}
+			
 			String lfhcId = getCodeFromMappedId(lfhcMappedId);
 			if(lfhcId.isEmpty()) {
 				log.warn("This mapped ID is not correctly formated: " + lfhcMappedId + ". Skipping through to next concept in the CSV source.");
@@ -340,7 +353,9 @@ public class HGUConceptsInitializer implements Initializer {
 			}
 			String datatypeName = mappedConcept.get(CSV_DATATYPE);
 			ConceptDatatype datatype = cs.getConceptDatatypeByName(datatypeName);
-			if(datatype == null) {
+			
+			
+			if(!"Complex".equals(datatypeName) && datatype == null) {
 				log.warn("Could not save concept '" + name + "': invalid Datatype: " + datatypeName + ". Skipping through to next concept in the CSV source.");
 				continue;
 			}
@@ -361,7 +376,15 @@ public class HGUConceptsInitializer implements Initializer {
 			//
 			// Filling the new Concept instance
 			//
+			
+			
 			newConcept = new Concept();
+			if("Complex".equals(datatypeName)){
+				ConceptComplex compConcept = new ConceptComplex();
+				compConcept.setHandler(mappedConcept.get(CSV_COMPLEX_HANDLER));
+				newConcept = compConcept;
+			}
+				
 			if(!synonyms.isEmpty()) {
 				Collection<ConceptName> names = new HashSet<ConceptName>();
 				String[] synList = synonyms.split(CSV_INNER_DELIMITER);
@@ -381,6 +404,10 @@ public class HGUConceptsInitializer implements Initializer {
 			newConcept.addDescription(description);
 			newConcept.setConceptClass(conceptClass);
 			newConcept.setDatatype(datatype);
+			
+			
+			
+			
 			{	//The LFHC mapping
 				ConceptReferenceTerm refTerm = new ConceptReferenceTerm(lfhcSource, lfhcId, "");
 				ConceptMapType mapType = cs.getConceptMapTypeByUuid(ConceptMapType.SAME_AS_MAP_TYPE_UUID);
