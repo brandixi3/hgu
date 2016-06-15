@@ -352,27 +352,9 @@
 									}
 								}
 							]
-						},
+						}
                         
-                         {
-							"legend": " Contact number",
-							"id": " Contact number",
-							"fields": 
-							[
-								{
-									"type": "obs",
-									"label": "Contact number ",
-									"formFieldName": "obs.HGU:163117",
-                                    "uuid": "e7963821-fe5e-4948-8c79-c692c5a8d96a",
-									"widget": 
-									{
-										"providerName": "uicommons",
-										"fragmentId": "field/text",
-                                        "size":1000
-									}
-								}
-							]
-                     }
+                         
                         
 					]
 				},
