@@ -52,18 +52,18 @@
 	<section headerLabel="For office use ">
 		<table class="baseline-aligned">
 			 <tr>
-				<td width="30%" >Serial No:</td>
+				<td width="30%" style="vertical-align:middle;">Serial No</td>
 				<td width="70%" ><obs conceptId="HGU:163100" /></td>
 			</tr>
                         <tr>
-				<td>Date:</td>
+				<td style="vertical-align:middle;">Date</td>
 				<td><encounterDate default="today"/></td>
 			</tr>
 
 			
 			
                         <tr>
-				<td>Test no</td>
+				<td style="vertical-align:middle;">Test no</td>
 				<td>
 <lookup complexExpression="#foreach($obs in  $fn.latestEncounter('39deb891-8dc6-451b-9361-dbf564f27250').obs)
 
@@ -81,11 +81,11 @@
 			</tr>
 
                        <tr>
-				<td>Location:</td>
+				<td style="vertical-align:middle;">Location</td>
 				<td><encounterLocation  default="SessionAttribute:emrContext.sessionLocationId"  type="autocomplete"/></td>
 			</tr>
                          <tr>
-				<td>Provider:</td>
+				<td style="vertical-align:middle;">Provider</td>
 				<td><encounterProvider default="currentUser"  type="autocomplete"/></td>
 			</tr>
 
