@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 HGU Mapping	ICD-10 Mapping	Name	Short Name	Synonyms (comma-separated)	Description	Class	Is set	Datatype	Subconcepts (comma-separated)	Numeric - Unit	Numeric - Absolute High	Numeric - Critical High	Numeric - Normal High	Numeric - Normal Low	Numeric - Critical Low	Numeric - Absolute Low	Numeric - Allow decimals	Complex Handler Type
 HGU:163113		Additional Demographic Info	Additional Demographic Info			Misc		Text										
 HGU:163114		Reffered Reason	Reffered Reason			Misc		Text										
@@ -27,9 +28,9 @@ HGU:163130		HGU009 - TPMT Mutation Test			Predict adverse reactions to thiopurin
 HGU:163131		HGU0010 - K-Ras Mutation Test			Predict response to EGFR blockers	Test	No	Text										
 HGU:163132		HGU0011 - BRAF V600E Mutation Test			Colorectal Cancer	Test	No	Text										
 HGU:163133		HGUK01 - Blood Karyotype			"Congential Abnormalities, Development Delay, Mental Retardation, Disorders of Sexual Development, Ammenorrhoea, Subfertility, Haematological Malignancies and Other Haematological Conditions"	Test	No	Text										
-HGU:163134		HGUK02 - Bone Marrow Karyotype			"Haematological Maliganancies and Other Haematological Conditions"	Test	No	Text										
-HGU:163135		HGUF001 - FISH - BCR/ABL			"Chronic Myeloid Leukaemia (AML) and Acute Lymhocytic Leukaemia (ALL)"	Test	No	Text										
-HGU:163136		HGUF002 - FISH - MLL rearrangents			"Acute Lymphocytic Leukaemia (ALL) and Acute Myeloid Leukaemia (AML)"	Test	No	Text										
+HGU:163134		HGUK02 - Bone Marrow Karyotype			"Haematological Malignancies and Other Haematological Conditions"	Test	No	Text										
+HGU:163135		HGUF001 - FISH - BCR/ABL			"Chronic Myeloid Leukaemia (CML) and Acute Lymhocytic Leukaemia (ALL)"	Test	No	Text										
+HGU:163136		HGUF002 - FISH - MLL rearrangements			"Acute Lymphocytic Leukaemia (ALL) and Acute Myeloid Leukaemia (AML)"	Test	No	Text										
 HGU:163137		HGUF003 - FISH - t(12;21)(p13;q22);TEL-AML1 (ETV6-RUNXI)			"Acute Lymophocytic Leukaemia (ALL)"	Test	No	Text										
 HGU:163138		HGUF004 - FISH - TCF3			"Acute Lymophocytic Leukaemia (ALL)"	Test	No	Text										
 HGU:163139		HGUF005 - FISH - IGH			"Lymphoma (NHL)  and T-ALL"	Test	No	Text										
@@ -40,3 +41,4 @@ HGU:163143		HGUF009 - FISH - 5q			"Myelodysplastic Syndromes (MDS)"	Test	No	Text
 HGU:163144		HGUF010 - FISH - 7q			"Myelodysplastic Syndromes (MDS)"	Test	No	Text										
 HGU:163122		Consanguinity	Consanguinity			Test		Boolean										
 HGU:163123		Discription	Discription			Test		Text										
+

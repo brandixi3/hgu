@@ -354,8 +354,126 @@
 							]
 						}
                         
+                         
+                        
 					]
-				}
+				},
+                
+                             {
+					"id": "Consultants details",
+					"label": "Consultant's details",
+					"questions": 
+					[
+						{
+							"legend": "Referred by",
+							"id": "Referred by",
+							"fields": 
+							[
+								{
+									"type": "obs",
+									"label": "Referred by (Consultants Name) ",
+									"formFieldName": "obs.HGU:163115",
+                                    "uuid": "f33b428a-7911-4036-aefb-67f04ca2d4b4",
+									"widget": 
+									{
+										"providerName": "uicommons",
+										"fragmentId": "field/text",
+                                        "size":1000
+									}
+								}
+							]
+						},
+                        
+                        {
+							"legend": "Station",
+							"id": "Station",
+							"fields": 
+							[
+								{
+									"type": "obs",
+									"label": "Station ",
+									"formFieldName": "obs.HGU:163116",
+                                    "uuid": "4a3388d5-7dcd-4afa-8d38-2160369aa25d",
+									"widget": 
+									{
+										"providerName": "uicommons",
+										"fragmentId": "field/textarea",
+                                        "size":1000
+									}
+								}
+							]
+						},                      
+                                    
+                        
+                     {
+							"legend": " Contact number",
+							"id": " Contact number",
+							"fields": 
+							[
+								{
+									"type": "obs",
+									"label": "Contact number ",
+									"formFieldName": "obs.HGU:163117",
+                                    "uuid": "e7963821-fe5e-4948-8c79-c692c5a8d96a",
+									"widget": 
+									{
+										"providerName": "uicommons",
+										"fragmentId": "field/text",
+                                        "size":1000
+									}
+								}
+							]
+                     },
+                        
+                        {
+							"legend": "Email",
+							"id": " Email",
+							"fields": 
+							[
+								{
+									"type": "obs",
+									"label": "Email ",
+									"formFieldName": "obs.HGU:163118",
+                                    "uuid": "6b66ec1a-471e-4967-9060-e8d5a67fe1c6",
+									"widget": 
+									{
+										"providerName": "uicommons",
+										"fragmentId": "field/text",
+                                        "size":1000
+									}
+								}
+							]
+						},
+                        {
+							"legend": "Reason",
+							"id": "Reason",
+							"fields": 
+							[
+								{
+									"type": "obs",
+									"label": "Reason for the referral ",
+									"formFieldName": "obs.HGU:163119",
+                                    "uuid": "6baf1c83-9501-476e-aade-7064163e3eab",
+									"widget": 
+									{
+										"providerName": "uicommons",
+										"fragmentId": "field/textarea",
+                                        "size":1000
+									}
+								}
+							]
+						}
+                        
+                
+                  ]
+                }
+
+
+                        
+
+
+                        
+               
 
 				
 			]

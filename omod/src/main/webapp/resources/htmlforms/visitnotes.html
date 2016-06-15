@@ -27,6 +27,17 @@ formName="HGU-Visit Notes" formVersion="0.1" formAddMetadata="yes"
 		table.baseline-aligned td {
 			vertical-align: baseline;
 		}
+
+              .radio-style input,.radio-style label{
+              float:left;
+              }
+              .radio-style input[type=radio]{
+                  margin-top: 8px;
+              }
+              .radio-style label{
+    position: relative;
+    top: -4px;
+              }
 	</style>
 
 	<span style="float:right">Paper Form ID: $paperFormId</span>
@@ -64,12 +75,19 @@ formName="HGU-Visit Notes" formVersion="0.1" formAddMetadata="yes"
 		</table>
 	
 
-	<section headerLabel=" Visiting information">
+	<section headerLabel=" Visiting Information">
 		<table class="baseline-aligned">
-			<tr>
-				<td>Visit findings</td>
+			<tr >
+				<td style="vertical-align:middle; text-align:center">Visit Findings</td>
 				<td><obs conceptId="HGU:163123" labelText="" rows="4" cols="80"/></td>
 			</tr>
+                       <tr >
+				<td style="vertical-align:middle; text-align:center">Diagnosis</td>
+				<td rawspan="5"><obs conceptId="HGU:163120"  rows="5" cols="80"/></td>
+					
+				
+			</tr>
+                        <tr><td>Consanguinity </td><td class="radio-style">  <obs conceptId="HGU:163122"  style="yes_no"/>  </td> </tr>
 			
 		</table>
 	</section>
