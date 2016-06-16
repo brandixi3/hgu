@@ -27,24 +27,43 @@
 			vertical-align: baseline;
 		}
 	</style>
-        <h2>File upload form (v1.0)</h2>
+        <h2>File upload form </h2>
 
+	<table class="baseline-aligned">
+			<div class="hidden" id="who-where-when">
+	<p id="who">
+		<label>
+			<uimessage code="coreapps.patientDashBoard.provider" />
+		</label>
+		<span>
+			<encounterProvider default="currentUser" required="true" />
+		</span>
+	</p>
+	<p id="where">
+		<label>
+			<uimessage code="coreapps.patientDashBoard.location" />
+		</label>
+		<span>
+			<encounterLocation default="SessionAttribute:emrContext.sessionLocationId" />
+		</span>
+	</p>
+	<p id="when">
+		<label>
+			<uimessage code="coreapps.patientDashBoard.date" />
+		</label>
+		<span>
+			<!-- Mandatory showTime="true" to set encounter date and time -->
+			<encounterDate id="encounterDate" default="now" showTime="true"/>
+		</span>
+	</p>
+</div>
+		</table>
+	
 	
 
 	<section headerLabel="Test Results">
 		<table class="baseline-aligned">
-                        <tr>
-				<td>Date:</td>
-				<td><encounterDate default="today"/></td>
-			</tr>
-                       <tr>
-				<td>Location:</td>
-				<td><encounterLocation default="SessionAttribute:emrContext.sessionLocationId"/></td>
-			</tr>
-                         <tr>
-				<td>Provider:</td>
-				<td><encounterProvider default="currentUser"/></td>
-			</tr>
+            
 
                        <tr>
 				<td >Test 1</td>
