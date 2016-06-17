@@ -4,8 +4,8 @@ HGU:163114		Reffered Reason	Reffered Reason			Misc		Text
 HGU:163100		Serial No	Serial No			Test		Text										
 HGU:163101		Serial No1	Serial No1			Test		Text										
 HGU:163102		Serial No2	Serial No2			Test		Text										
-HGU:163108		sample collected1	sample collected1			Test		Boolean										
-HGU:163110		Report	Report			Test		Boolean										
+HGU:163108		sample collected	sample collected1			Test		Boolean										
+HGU:163110		Report	Report is ready			Test		Boolean										
 HGU:163111		Patient informed	Patient informed			Test		Boolean										
 HGU:163112		Report issued	Report issued			Test		Boolean										
 HGU:163115		Referred by	Referred by			Test		Text										
