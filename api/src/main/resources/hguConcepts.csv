@@ -42,5 +42,48 @@ HGU:163122		Consanguinity	Consanguinity			Test		Boolean
 HGU:163123		Discription	Discription			Test		Text										
 HGU:163147		ImageUpload	image			Test		Complex										ImageHandler
 HGU:163148		FileUpload	file			Test		Complex										ImageHandler
-
-
+HGU:163149		FileUpload1	file			Test		Complex										ImageHandler
+HGU:163150		FileUpload2	file			Test		Complex										ImageHandler
+HGU:163151		FileUpload3	file			Test		Complex										ImageHandler
+HGU:163152		FileUpload4	file			Test		Complex										ImageHandler
+HGU:163153		FileUpload5	file			Test		Complex										ImageHandler
+HGU:163154		FileUpload6	file			Test		Complex										ImageHandler
+HGU:163155		FileUpload7	file			Test		Complex										ImageHandler
+HGU:163156		FileUpload8	file			Test		Complex										ImageHandler
+HGU:163157		FileUpload9	file			Test		Complex										ImageHandler
+HGU:163158		ImageUpload1	image			Test		Complex										ImageHandler
+HGU:163159		ImageUpload2	image			Test		Complex										ImageHandler
+HGU:163160		ImageUpload3	image			Test		Complex										ImageHandler
+HGU:163161		ImageUpload4	image			Test		Complex										ImageHandler
+HGU:163162		Collected date	Collected date			Test		Date										
+HGU:163163		Ready date	Ready date			Test		Date										
+HGU:163164		Informed date	Informed date			Test		Date										
+HGU:163165		Issued date	Issued date			Test		Date										
+HGU:163166		Comments about collection	Collected comments			Test		Text										
+HGU:163167		Comments about ready	Comments about ready			Test		Text										
+HGU:163168		Comments about informed	Comments about infored			Test		Text										
+HGU:163169		Comments about issued	Comments about ready			Test		Text										
+HGU:163170		Other comments	Comments about infored			Test		Text										
+HGU:163171		Test Result 1	Test Result 1			Test		Text										
+HGU:163172		Test Result 2	Test Result 2			Test		Text										
+HGU:163173		Test Result 3	Test Result 3			Test		Text										
+HGU:163174		Test Result 4	Test Result 4			Test		Text										
+HGU:163175		Test Result 5	Test Result 5			Test		Text										
+HGU:163176		Report 1	Report 1			Test		Text										
+HGU:163177		Report 2	Report 2			Test		Text										
+HGU:163178		Report 3	Report 3			Test		Text										
+HGU:163179		Report 4	Report 4			Test		Text										
+HGU:163180		Report 5	Report 5			Test		Text										
+HGU:163181		Other Documents 1	Other Documents 1			Test		Text										
+HGU:163182		Other Documents 2	Other Documents 2			Test		Text										
+HGU:163183		Other Documents 3	Other Documents 3			Test		Text										
+HGU:163184		ImageUpload5	image			Test		Complex										ImageHandler
+HGU:163185		ImageUpload6	image			Test		Complex										ImageHandler
+HGU:163186		ImageUpload7	image			Test		Complex										ImageHandler
+HGU:163187		ImageUpload8	image			Test		Complex										ImageHandler
+HGU:163188		ImageUpload9	image			Test		Complex										ImageHandler
+HGU:163189		Image 1	Image 1			Test		Text										
+HGU:163190		Image 2	Image 2			Test		Text										
+HGU:163191		Image 3	Image 3			Test		Text										
+HGU:163192		Image 4	Image 4			Test		Text										
+HGU:163193		Image 5	Image 5			Test		Text										

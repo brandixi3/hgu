@@ -44,7 +44,14 @@
               }
 	</style>
 
-	<span style="float:right">Paper Form ID: $paperFormId</span>
+<!--	<span style="float:right">Paper Form ID: $paperFormId</span> -->
+
+        <div id="exit-form-container">
+        <a href="/openmrs/coreapps/clinicianfacing/patient.page?patientId=450c71a0-7f10-43b9-af01-1c9df982deb7&amp;">
+            <i class="icon-signout small"></i>
+            Exit Form
+        </a>
+    </div>
 	<h2>HGU-office use </h2>
 
 <table class="baseline-aligned">
@@ -83,8 +90,8 @@
 	<section headerLabel="For office use ">
 		<table class="baseline-aligned">
 			 <tr>
-				<td width="30%" style="vertical-align:middle;">Serial No</td>
-				<td width="70%" ><obs conceptId="HGU:163100" /></td>
+				<td  width="30%" style="vertical-align:middle;">Serial No</td>
+				<td width="70%" colspan="2" ><obs conceptId="HGU:163100" /></td>
 			</tr>
                    <!--     <tr>
 				<td style="vertical-align:middle;">Date</td>
@@ -95,7 +102,7 @@
 			
                         <tr>
 				<td style="vertical-align:middle;">Test no</td>
-				<td>
+				<td colspan="5">
 <lookup complexExpression="#foreach($obs in  $fn.latestEncounter('39deb891-8dc6-451b-9361-dbf564f27250').obs)
 
 
@@ -120,11 +127,11 @@
 				<td><encounterProvider default="currentUser"  type="autocomplete"/></td>
 			</tr> -->
 
-                       <tr><td>Sample collected </td><td class="radio-style" >  <obs conceptId="HGU:163108"  style="yes_no"  />  </td> </tr>
-                       <tr><td >Report is ready </td><td class="radio-style"><obs conceptId="HGU:163110" style="yes_no"  /></td></tr>
-                       <tr><td >Patient informed</td><td class="radio-style"><obs conceptId="HGU:163111" style="yes_no"  class="radio"/></td></tr>
-                       <tr><td >Report issued</td><td class="radio-style"><obs conceptId="HGU:163112" style="yes_no"  class="radio"/></td></tr>
-                      
+                       <tr><td style="vertical-align:middle;">Sample collected </td><td class="radio-style" >  <obs conceptId="HGU:163108"  style="yes_no"  />  </td> <td style="vertical-align:middle;">Date</td><td><obs conceptId="HGU:163162"/></td><td style="vertical-align:middle;">Comments</td><td><obs conceptId="HGU:163166" labelText="" rows="2" cols="42"/></td></tr>
+                       <tr><td style="vertical-align:middle;" >Report is ready </td><td class="radio-style"><obs conceptId="HGU:163110" style="yes_no"  /></td><td style="vertical-align:middle;">Date</td><td><obs conceptId="HGU:163163"/></td><td style="vertical-align:middle;">Comments</td><td><obs conceptId="HGU:163167" labelText="" rows="2" cols="42"/></td></tr>
+                       <tr><td style="vertical-align:middle;">Patient informed</td><td class="radio-style"><obs conceptId="HGU:163111" style="yes_no"  class="radio"/></td><td style="vertical-align:middle;">Date</td><td><obs conceptId="HGU:163164"/><td style="vertical-align:middle;">Comments</td><td><obs conceptId="HGU:163168" labelText="" rows="2" cols="42"/></td></td></tr>
+                       <tr><td style="vertical-align:middle;">Report issued</td><td class="radio-style"><obs conceptId="HGU:163112" style="yes_no"  class="radio"/></td><td style="vertical-align:middle;">Date</td><td><obs conceptId="HGU:163165"/></td><td style="vertical-align:middle;">Comments</td><td><obs conceptId="HGU:163169" labelText="" rows="2" cols="42"/></td></tr>
+                      <tr><td style="vertical-align:middle;">Other Comments</td><td colspan="5"><obs conceptId="HGU:163169" labelText="" rows="10" cols="80"/></td></tr>
 			
 		</table>
 	</section>
