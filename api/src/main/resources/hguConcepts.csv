@@ -40,21 +40,21 @@ HGU:163143		HGUF009 - FISH - 5q			"Myelodysplastic Syndromes (MDS)"	Test	No	Text
 HGU:163144		HGUF010 - FISH - 7q			"Myelodysplastic Syndromes (MDS)"	Test	No	Text										
 HGU:163122		Consanguinity	Consanguinity			Test		Boolean										
 HGU:163123		Discription	Discription			Test		Text										
-HGU:163147		ImageUpload	image			Test		Complex										ImageHandler
-HGU:163148		FileUpload	file			Test		Complex										ImageHandler
-HGU:163149		FileUpload1	file			Test		Complex										ImageHandler
-HGU:163150		FileUpload2	file			Test		Complex										ImageHandler
-HGU:163151		FileUpload3	file			Test		Complex										ImageHandler
-HGU:163152		FileUpload4	file			Test		Complex										ImageHandler
-HGU:163153		FileUpload5	file			Test		Complex										ImageHandler
-HGU:163154		FileUpload6	file			Test		Complex										ImageHandler
-HGU:163155		FileUpload7	file			Test		Complex										ImageHandler
-HGU:163156		FileUpload8	file			Test		Complex										ImageHandler
-HGU:163157		FileUpload9	file			Test		Complex										ImageHandler
-HGU:163158		ImageUpload1	image			Test		Complex										ImageHandler
-HGU:163159		ImageUpload2	image			Test		Complex										ImageHandler
-HGU:163160		ImageUpload3	image			Test		Complex										ImageHandler
-HGU:163161		ImageUpload4	image			Test		Complex										ImageHandler
+HGU:163147		ImageUpload	image			Test		Complex										BinaryDataHandler
+HGU:163148		FileUpload	file			Test		Complex										BinaryDataHandler
+HGU:163149		FileUpload1	file			Test		Complex										BinaryDataHandler
+HGU:163150		FileUpload2	file			Test		Complex										BinaryDataHandler
+HGU:163151		FileUpload3	file			Test		Complex										BinaryDataHandler
+HGU:163152		FileUpload4	file			Test		Complex										BinaryDataHandler
+HGU:163153		FileUpload5	file			Test		Complex										BinaryDataHandler
+HGU:163154		FileUpload6	file			Test		Complex										BinaryDataHandler
+HGU:163155		FileUpload7	file			Test		Complex										BinaryDataHandler
+HGU:163156		FileUpload8	file			Test		Complex										BinaryDataHandler
+HGU:163157		FileUpload9	file			Test		Complex										BinaryDataHandler
+HGU:163158		ImageUpload1	image			Test		Complex										BinaryDataHandler
+HGU:163159		ImageUpload2	image			Test		Complex										BinaryDataHandler
+HGU:163160		ImageUpload3	image			Test		Complex										BinaryDataHandler
+HGU:163161		ImageUpload4	image			Test		Complex										BinaryDataHandler
 HGU:163162		Collected date	Collected date			Test		Date										
 HGU:163163		Ready date	Ready date			Test		Date										
 HGU:163164		Informed date	Informed date			Test		Date										
@@ -77,14 +77,15 @@ HGU:163180		Report 5	Report 5			Test		Text
 HGU:163181		Other Documents 1	Other Documents 1			Test		Text										
 HGU:163182		Other Documents 2	Other Documents 2			Test		Text										
 HGU:163183		Other Documents 3	Other Documents 3			Test		Text										
-HGU:163184		ImageUpload5	image			Test		Complex										ImageHandler
-HGU:163185		ImageUpload6	image			Test		Complex										ImageHandler
-HGU:163186		ImageUpload7	image			Test		Complex										ImageHandler
-HGU:163187		ImageUpload8	image			Test		Complex										ImageHandler
-HGU:163188		ImageUpload9	image			Test		Complex										ImageHandler
+HGU:163184		ImageUpload5	image			Test		Complex										BinaryDataHandler
+HGU:163185		ImageUpload6	image			Test		Complex										BinaryDataHandler
+HGU:163186		ImageUpload7	image			Test		Complex										BinaryDataHandler
+HGU:163187		ImageUpload8	image			Test		Complex										BinaryDataHandler
+HGU:163188		ImageUpload9	image			Test		Complex										BinaryDataHandler
 HGU:163189		Image 1	Image 1			Test		Text										
 HGU:163190		Image 2	Image 2			Test		Text										
 HGU:163191		Image 3	Image 3			Test		Text										
 HGU:163192		Image 4	Image 4			Test		Text										
 HGU:163193		Image 5	Image 5			Test		Text										
 HGU:163194		otherTest	other			Test		Text										
+HGU:163195		ImageUpload10	image			Test		Complex										BinaryDataHandler

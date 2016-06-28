@@ -1,6 +1,6 @@
 <htmlform formUuid="7aebbebd-0669-4403-ada2-2ba8f2ad9810"  formEncounterType="2f1fe661-fed8-4eef-b152-8d6264dd1205" 
 	formName="HGU-Office Use" formVersion="0.1" formAddMetadata="yes"
-	formUILocation="patientDashboard.overallActions" formOrder="3"
+	formUILocation="patientDashboard.visitActions" formOrder="3"
 	formIcon="icon-user" formShowIf="" formDisplayStyle="Standard">
     
     
@@ -102,16 +102,24 @@
 			
                         <tr>
 				<td style="vertical-align:middle;">Test no</td>
-				<td colspan="5"><lookup  class="value" expression="fn.latestObs('HGU:163194').valueText"/>
-<lookup complexExpression="#foreach($obs in  $fn.latestEncounter('39deb891-8dc6-451b-9361-dbf564f27250').obs)
+				<td colspan="5"><!--<lookup  class="value" expression="fn.latestObs('HGU:163194').valueText"/>-->
+<lookup complexExpression="
 
 
-                                           $obs.valueCoded.name 
-                                                   &lt;br &gt;
+#foreach($obs in  $fn.latestEncounter('39deb891-8dc6-451b-9361-dbf564f27250').obs)
+
+                                    #if($obs.concept.datatype.name.equals('Text'))
+                                                  $obs.valueText
+                                                        
+                                          #else  
+                                                  $obs.valueCoded.name
+                                                  
+
 													 
-                                                 #end" 
-                                                 
-                                                class="value" /> 
+                                                 #end 
+                                               &lt;br&gt;
+                                                #end "
+                                               class="value" /> 
 
 
 

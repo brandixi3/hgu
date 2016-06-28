@@ -9,9 +9,9 @@
         "order": 2,
         "requiredPrivilege": "App: coreapps.findPatient"
     },
-    {
+     {
                 "id": "coreapps.activeVisitsHomepageLink",
-                "extensionPointId": "patientDashboard.overallActions",
+                "extensionPointId": "patientDashboard.visitActions",
                 "type": "link",
                 "label": "HGU - Upload Files",
                 "url": "module/htmlformentry/htmlFormEntry.form?formId=10&patientId={{patient.patientId}}&refappui=true",
@@ -19,9 +19,10 @@
                 "order": 3,
                 "requiredPrivilege": "App: coreapps.findPatient"
     },
+    
     {
                 "id": "coreapps.activeVisitsHomepageLink2",
-                "extensionPointId": "patientDashboard.overallActions",
+                "extensionPointId": "patientDashboard.visitActions",
                 "type": "link",
                 "label": "HGU - View Files",
                 "url": "patientDashboard.form?patientId={{patient.patientId}}",
