@@ -90,6 +90,20 @@ table.baseline-aligned td {
 			<td><lookup class="value"
 					expression="personAttributes.get('Email No 2')" /></td>
 		</tr>
+		 <tr>
+			<td>BHT No</td>
+			<td> <lookup  class="value" expression="fn.latestObs('HGU:163197').valueText"/>
+   
+
+					  </td>
+		</tr>
+		 <tr>
+			<td>Clinic No</td>
+			<td> <lookup  class="value" expression="fn.latestObs('HGU:163198').valueText"/>
+   
+
+					  </td>
+		</tr>  
 		<tr>
 			<th colspan="2">Mother details</th>
 		</tr>
@@ -185,6 +199,13 @@ table.baseline-aligned td {
                <tr>
 			<td>Referred by (Consultant's Name)</td>
 			<td> <lookup  class="value" expression="fn.latestObs('HGU:163115').valueText"/>
+   
+
+					  </td>
+		</tr> 
+		 <tr>
+			<td>Specialty</td>
+			<td> <lookup  class="value" expression="fn.latestObs('HGU:163196').valueText"/>
    
 
 					  </td>

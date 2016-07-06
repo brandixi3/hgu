@@ -130,6 +130,44 @@
 									
 								}
 							]
+						},
+                         {
+							"legend": "BHT No",
+							"id": "BHT No",
+							"fields": 
+							[
+								{
+									"type": "obs",
+									"label": "BHT No",
+									"formFieldName": "obs.HGU:163197",
+                                    "uuid": "71120e4a-780d-41f1-9502-7f437fd513dc",
+									"widget": 
+									{
+										"providerName": "uicommons",
+										"fragmentId": "field/text",
+                                        "size":1000
+									}
+								}
+							]
+						},
+                         {
+							"legend": "Clinic No",
+							"id": "Clinic No",
+							"fields": 
+							[
+								{
+									"type": "obs",
+									"label": "Clinic No ",
+									"formFieldName": "obs.HGU:163198",
+                                    "uuid": "c0387a74-1d63-4b45-8d68-ac8e79aac4fc",
+									"widget": 
+									{
+										"providerName": "uicommons",
+										"fragmentId": "field/text",
+                                        "size":1000
+									}
+								}
+							]
 						}
 					]
 				},
@@ -383,7 +421,25 @@
 								}
 							]
 						},
-                        
+                        {
+							"legend": "Specialty",
+							"id": "Specialty",
+							"fields": 
+							[
+								{
+									"type": "obs",
+									"label": "Specialty ",
+									"formFieldName": "obs.HGU:163196",
+                                    "uuid": "50670280-ac94-4653-a50a-c4cff7d1b914",
+									"widget": 
+									{
+										"providerName": "uicommons",
+										"fragmentId": "field/text",
+                                        "size":1000
+									}
+								}
+							]
+						},
                         {
 							"legend": "Station",
 							"id": "Station",
