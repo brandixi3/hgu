@@ -15,7 +15,7 @@
                 "type": "link",
                 "label": "HGU - Upload Files",
                 "url": "module/htmlformentry/htmlFormEntry.form?formId=10&patientId={{patient.patientId}}&refappui=true",
-                "icon": "icon-sitemap",
+                "icon": "icon-file",
                 "order": 3,
                 "requiredPrivilege": "App: coreapps.findPatient"
     },
@@ -26,7 +26,18 @@
                 "type": "link",
                 "label": "HGU - View Files",
                 "url": "patientDashboard.form?patientId={{patient.patientId}}",
-                "icon": "icon-sitemap",
+                "icon": "icon-file",
+                "order": 4,
+                "requiredPrivilege": "App: coreapps.findPatient"
+    },
+    
+    {
+                "id": "coreapps.activeVisitsHomepageLink3",
+                "extensionPointId": "patientDashboard.overallActions",
+                "type": "link",
+                "label": "HGU - Edit Patient Info",
+                "url": "admin/patients/patient.form?patientId={{patient.patientId}}",
+                "icon": "icon-pencil",
                 "order": 4,
                 "requiredPrivilege": "App: coreapps.findPatient"
     }
