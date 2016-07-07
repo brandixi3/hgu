@@ -1,7 +1,7 @@
 HGU Mapping	ICD-10 Mapping	Name	Short Name	Synonyms (comma-separated)	Description	Class	Is set	Datatype	Subconcepts (comma-separated)	Numeric - Unit	Numeric - Absolute High	Numeric - Critical High	Numeric - Normal High	Numeric - Normal Low	Numeric - Critical Low	Numeric - Absolute Low	Numeric - Allow decimals	Complex Handler Type
 HGU:163113		Additional Demographic Info	Additional Demographic Info			Misc		Text										
 HGU:163114		Reffered Reason	Reffered Reason			Misc		Text										
-HGU:163100		Serial No 1	Serial No 1			Test		Text										
+HGU:163100		Serial No	Serial No			Test		Text										
 HGU:163101		Serial No 2	Serial No 2			Test		Text										
 HGU:163102		Serial No 3	Serial No 3			Test		Text										
 HGU:163108		sample collected	sample collected1			Test		Boolean										

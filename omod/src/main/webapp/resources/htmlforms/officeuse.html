@@ -84,10 +84,10 @@
 
 	<section headerLabel="For office use ">
 		<table class="baseline-aligned">
-			<!-- <tr>
+			 <tr>
 				<td  width="30%" style="vertical-align:middle;">Serial No</td>
-				<td width="70%" colspan="2" ><obs conceptId="HGU:163100" /></td>
-			</tr>-->
+				<td width="70%" colspan="5" ><obs conceptId="HGU:163100" /></td>
+			</tr>
                    <!--     <tr>
 				<td style="vertical-align:middle;">Date</td>
 				<td><encounterDate default="today"/></td>
@@ -97,31 +97,26 @@
 			
                         <tr>
 				<td style="vertical-align:middle;">Test no</td>
-				<td colspan="4"><!--<lookup  class="value" expression="fn.latestObs('HGU:163194').valueText"/>-->
+				<td colspan="5"><!--<lookup  class="value" expression="fn.latestObs('HGU:163194').valueText"/>-->
 <lookup complexExpression="
 
 
 #foreach($obs in  $fn.latestEncounter('39deb891-8dc6-451b-9361-dbf564f27250').obs)
-                                                &lt;br&gt;
+                                              
                                                    
                                     #if($obs.concept.datatype.name.equals('Text'))
-                                                  $obs.valueText
-                                                        
+                                                
                                           #else  
                                                   $obs.valueCoded.name
-                                                  
-
-													 
+                                                  													 
                                                  #end 
-                                               &lt;br&gt;
-                                                 &lt;br&gt;
-                                                &lt;br&gt;
+                                                  &lt;br&gt;
                                                 #end "
                                                class="value" /> 
 
 
 
- </td><td>Serial No 1<obs conceptId="HGU:163100" /><br/>Serial No 2<obs conceptId="HGU:163101" /><br/>Serial No 3<obs conceptId="HGU:163102" /><br/>Serial No 4<obs conceptId="HGU:163199" /><br/>Serial No 5<obs conceptId="HGU:163200" /></td>
+ </td>
 			</tr>
 
            <!--            <tr>
@@ -137,7 +132,7 @@
                        <tr><td style="vertical-align:middle;" >Report is ready </td><td class="radio-style"><obs conceptId="HGU:163110" style="yes_no"  /></td><td style="vertical-align:middle;">Date</td><td><obs conceptId="HGU:163163"/></td><td style="vertical-align:middle;">Comments</td><td><obs conceptId="HGU:163167" labelText="" rows="2" cols="42"/></td></tr>
                        <tr><td style="vertical-align:middle;">Patient informed</td><td class="radio-style"><obs conceptId="HGU:163111" style="yes_no"  class="radio"/></td><td style="vertical-align:middle;">Date</td><td><obs conceptId="HGU:163164"/><td style="vertical-align:middle;">Comments</td><td><obs conceptId="HGU:163168" labelText="" rows="2" cols="42"/></td></td></tr>
                        <tr><td style="vertical-align:middle;">Report issued</td><td class="radio-style"><obs conceptId="HGU:163112" style="yes_no"  class="radio"/></td><td style="vertical-align:middle;">Date</td><td><obs conceptId="HGU:163165"/></td><td style="vertical-align:middle;">Comments</td><td><obs conceptId="HGU:163169" labelText="" rows="2" cols="42"/></td></tr>
-                      <tr><td style="vertical-align:middle;">Other Comments</td><td colspan="5"><obs conceptId="HGU:163169" labelText="" rows="10" cols="80"/></td></tr>
+                      <tr><td style="vertical-align:middle;">Other Comments</td><td colspan="5"><obs conceptId="HGU:163170" labelText="" rows="10" cols="80"/></td></tr>
 			
 		</table>
 	</section>
