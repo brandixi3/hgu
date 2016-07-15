@@ -38,7 +38,7 @@
                 "label": "Edit Patient Info",
                 "url": "admin/patients/patient.form?patientId={{patient.patientId}}",
                 "icon": "icon-pencil",
-                "order": 4,
+                "order": 0,
                 "requiredPrivilege": "App: coreapps.findPatient"
     }
 ]
