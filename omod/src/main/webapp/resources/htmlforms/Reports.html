@@ -1,5 +1,5 @@
-<htmlform formUuid="7aebbebd-0669-4403-ada2-2ba8f2ad9810"  formEncounterType="2f1fe661-fed8-4eef-b152-8d6264dd1205" 
-	formName="Ordered Test" formVersion="0.1" formAddMetadata="yes"
+<htmlform formUuid="7845f786-a0f3-4983-bd69-d5947e7a74ee"  formEncounterType="2f1fe661-fed8-4eef-b152-8d6264dd1205" 
+	formName="Reports" formVersion="0.1" formAddMetadata="yes"
 	formUILocation="patientDashboard.visitActions" formOrder="4"
 	formIcon="icon-folder-open" formShowIf="" formDisplayStyle="Standard">
     
@@ -59,15 +59,6 @@
 			<encounterProvider default="currentUser" required="true" />
 		</span>
 	</p>
-
-
-
-
-	
-
-
-
-
 	<p id="where">
 		<label>
 			<uimessage code="coreapps.patientDashBoard.location" />
@@ -89,6 +80,8 @@
 		</table>
 	
 
+	
+
 	<section headerLabel="Reports ">
 
 
@@ -107,30 +100,7 @@
 
 			
 			
-                        <tr>
-				<td style="vertical-align:middle;">Test no</td>
-				<td colspan="5"><!--<lookup  class="value" expression="fn.latestObs('HGU:163194').valueText"/>-->
-<lookup complexExpression="
-
-
-#foreach($obs in  $fn.latestEncounter('39deb891-8dc6-451b-9361-dbf564f27250').obs)
-                                &lt;a href= &quot;http://localhost:8080/openmrs/htmlformentryui/htmlform/enterHtmlFormWithStandardUi.page?patientId=$patient.uuid&amp;visitId=$visit.uuid&amp;orderedTest=123456&amp;formUuid=7845f786-a0f3-4983-bd69-d5947e7a74ee&amp;returnUrl=%2Fopenmrs%2Fcoreapps%2Fclinicianfacing%2Fpatient.page%3FpatientId%3D1e033cad-3fbe-4dcb-8d02-9558e8e39677%26 &quot;&gt; 
-                                    #if($obs.concept.datatype.name.equals('Text'))
-                                                
-                                          #else  
-                                                  $obs.valueCoded.name
-
-                                                  												 
-                                                 #end 
-                                                            
-                                                  &lt;br&gt;&lt;/a&gt;
-                                                #end "
-                                               class="value" /> 
-
-
-
- </td>
-			</tr>
+                       
 
            <!--            <tr>
 				<td style="vertical-align:middle;">Location</td>
@@ -147,8 +117,6 @@
                        <tr><td style="vertical-align:middle;">Report issued</td><td class="radio-style"><obs conceptId="HGU:163112" style="yes_no"  class="radio"/></td><td style="vertical-align:middle;">Date</td><td><obs conceptId="HGU:163165"/></td><td style="vertical-align:middle;">Comments</td><td><obs conceptId="HGU:163169" labelText="" rows="2" cols="42"/></td></tr>
 
 
-                      <tr><td style="vertical-align:middle;">Other Comments</td><td colspan="5"><obs conceptId="HGU:163170" labelText="" rows="10" cols="80"/></td></tr>
-			
 		</table>
 	</section>
 
