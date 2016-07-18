@@ -110,7 +110,7 @@
 
 
 #foreach($obs in  $fn.latestEncounter('39deb891-8dc6-451b-9361-dbf564f27250').obs)
-                                &lt;a href= &quot;http://localhost:8080/openmrs/htmlformentryui/htmlform/enterHtmlFormWithStandardUi.page?patientId=$patient.uuid&amp;visitId=$visit.uuid&amp;orderedTest=123456&amp;formUuid=7845f786-a0f3-4983-bd69-d5947e7a74ee&amp;returnUrl=%2Fopenmrs%2Fcoreapps%2Fclinicianfacing%2Fpatient.page%3FpatientId%3D1e033cad-3fbe-4dcb-8d02-9558e8e39677%26 &quot;&gt; 
+                                &lt;a href= &quot;https://192.168.1.110:8443/openmrs/htmlformentryui/htmlform/enterHtmlFormWithStandardUi.page?patientId=$patient.uuid&amp;visitId=$visit.uuid&amp;orderedTest=123456&amp;formUuid=7845f786-a0f3-4983-bd69-d5947e7a74ee&amp;returnUrl=%2Fopenmrs%2Fcoreapps%2Fclinicianfacing%2Fpatient.page%3FpatientId%3D1e033cad-3fbe-4dcb-8d02-9558e8e39677%26 &quot;&gt; 
                                     #if($obs.concept.datatype.name.equals('Text'))
                                                  $obs.valueText
                                                   
