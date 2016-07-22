@@ -14,7 +14,7 @@
                 "extensionPointId": "patientDashboard.visitActions",
                 "type": "link",
                 "label": "Upload Files",
-                "url": "module/htmlformentry/htmlFormEntry.form?formId=10&patientId={{patient.patientId}}&refappui=true",
+                "url": "module/htmlformentry/htmlFormEntry.form?formId=1&patientId={{patient.patientId}}&refappui=true",
                 "icon": "icon-file",
                 "order": 2,
                 "requiredPrivilege": "App: coreapps.findPatient"
