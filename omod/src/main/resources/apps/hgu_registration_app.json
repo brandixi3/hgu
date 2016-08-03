@@ -168,8 +168,29 @@
 									}
 								}
 							]
+						},
+						
+						{
+							"legend": "Station",
+							"id": "Station",
+							"fields": 
+							[
+								{
+									"type": "obs",
+									"label": "Station ",
+									"formFieldName": "obs.HGU:163205",
+                                    "uuid": "031cc796-a912-4cd0-9a5a-5b2b0b69b79d",
+									"widget": 
+									{
+										"providerName": "uicommons",
+										"fragmentId": "field/text",
+                                        "size":1000
+									}
+								}
+							]
 						}
 					]
+					
 				},
 
 				{
